@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-mutation-score",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hindex": "hindex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollelauribostrom/gatsby-mutation-score.git"
+  },
+  "author": "Olle Lauri Boström <ollebostr@gmail.com> (https://github.com/ollelauribostrom)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ollelauribostrom/gatsby-mutation-score/issues"
+  },
+  "homepage": "https://github.com/ollelauribostrom/gatsby-mutation-score#readme",
+  "dependencies": {
+    "@ollelauribostrom/hindex": "^2.0.3"
+  }
+}

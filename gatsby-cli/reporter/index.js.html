@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html><head><title>index.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="../strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="../strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">index.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">All files</a></li><li class="breadcrumb-item"><a href="index.html">reporter</a></li>
+<li class="breadcrumb-item active">index.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>index.js</td>
+<td><div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" style="width: 0.00%;">0.00
+%</div></div></td>
+<th class="text-center text-danger" style="width: 10%">0.00</th>
+<td class="text-center">0</td>
+<td class="text-center">57</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">0</th>
+<th class="text-center">57</th>
+<th class="text-center">57</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(57)</label></div>
+
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">// @flow
+
+const { createReporter } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="0"><span class="badge badge-danger">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">&quot;&quot;</span><span class="stryker-original-code" data-mutant="0"><span class="bg-danger-light">`yurnalist`</span></span><span class="bg-null">)
+const { stripIndent } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="1"><span class="badge badge-danger">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">&quot;&quot;</span><span class="stryker-original-code" data-mutant="1"><span class="bg-danger-light">`common-tags`</span></span><span class="bg-null">)
+const convertHrtime = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="2"><span class="badge badge-danger">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">&quot;&quot;</span><span class="stryker-original-code" data-mutant="2"><span class="bg-danger-light">`convert-hrtime`</span></span><span class="bg-null">)
+const tracer = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="3"><span class="badge badge-danger">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">&quot;&quot;</span><span class="stryker-original-code" data-mutant="3"><span class="bg-danger-light">`opentracing`</span></span><span class="bg-null">).globalTracer()
+const { getErrorFormatter } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="4"><span class="badge badge-danger">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">&quot;&quot;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-danger-light">`./errors`</span></span><span class="bg-null">)
+
+const VERBOSE = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="5"><span class="badge badge-danger">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">process.env.gatsby_log_level !== `verbose`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="6"><span class="badge badge-danger">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="7"><span class="badge badge-danger">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">true</span><span class="stryker-original-code" data-mutant="5"><span class="stryker-original-code" data-mutant="6"><span class="stryker-original-code" data-mutant="7"><span class="bg-danger-light">process.env.gatsby_log_level === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="8"><span class="badge badge-danger">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">&quot;&quot;</span><span class="stryker-original-code" data-mutant="8"><span class="bg-danger-light">`verbose`</span></span></span></span></span><span class="bg-null">
+
+const errorFormatter = getErrorFormatter()
+const reporter = createReporter(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="9"><span class="badge badge-danger">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">{}</span><span class="stryker-original-code" data-mutant="9"><span class="bg-danger-light">{ emoji: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="10"><span class="badge badge-danger">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">false</span><span class="stryker-original-code" data-mutant="10"><span class="bg-danger-light">true</span></span><span class="bg-danger-light">, verbose: VERBOSE }</span></span><span class="bg-null">)
+const base = Object.getPrototypeOf(reporter)
+
+type ActivityArgs = {
+  parentSpan: Object,
+}
+
+/* Reporter module.
+ * @module reporter
+ */
+
+module.exports = Object.assign(reporter, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="11"><span class="badge badge-danger">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">{}</span><span class="stryker-original-code" data-mutant="11"><span class="bg-danger-light">{
+  /**
+   * Strip initial indentation template function.
+   */
+  stripIndent,
+  /**
+   * Toggle verbosity.
+   * @param {boolean} [isVerbose=true]
+   */
+  setVerbose(isVerbose = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="12"><span class="badge badge-danger">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">false</span><span class="stryker-original-code" data-mutant="12"><span class="bg-danger-light">true</span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="13"><span class="badge badge-danger">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">{}</span><span class="stryker-original-code" data-mutant="13"><span class="bg-danger-light">{
+    this.isVerbose = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="14"><span class="badge badge-danger">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">!isVerbose</span><span class="stryker-original-code" data-mutant="14"><span class="bg-danger-light">!</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="15"><span class="badge badge-danger">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">isVerbose</span><span class="stryker-original-code" data-mutant="15"><span class="bg-danger-light">!isVerbose</span></span></span><span class="bg-danger-light">
+  }</span></span><span class="bg-danger-light">,
+  /**
+   * Turn off colors in error output.
+   * @param {boolean} [isNoColor=false]
+   */
+  setNoColor(isNoColor = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="16"><span class="badge badge-danger">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">true</span><span class="stryker-original-code" data-mutant="16"><span class="bg-danger-light">false</span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="17"><span class="badge badge-danger">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">{}</span><span class="stryker-original-code" data-mutant="17"><span class="bg-danger-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="18"><span class="badge badge-danger">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="19"><span class="badge badge-danger">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">false</span><span class="stryker-original-code" data-mutant="18"><span class="stryker-original-code" data-mutant="19"><span class="bg-danger-light">isNoColor</span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="20"><span class="badge badge-danger">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">{}</span><span class="stryker-original-code" data-mutant="20"><span class="bg-danger-light">{
+      errorFormatter.withoutColors()
+    }</span></span><span class="bg-danger-light">
+  }</span></span><span class="bg-danger-light">,
+  /**
+   * Log arguments and exit process with status 1.
+   * @param {*} [arguments]
+   */
+  panic(...args) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="21"><span class="badge badge-danger">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">{}</span><span class="stryker-original-code" data-mutant="21"><span class="bg-danger-light">{
+    this.error(...args)
+    process.exit(1)
+  }</span></span><span class="bg-danger-light">,
+
+  panicOnBuild(...args) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="22"><span class="badge badge-danger">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">{}</span><span class="stryker-original-code" data-mutant="22"><span class="bg-danger-light">{
+    this.error(...args)
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="23"><span class="badge badge-danger">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="24"><span class="badge badge-danger">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="25"><span class="badge badge-danger">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">process.env.gatsby_executing_command !== `build`</span><span class="stryker-original-code" data-mutant="23"><span class="stryker-original-code" data-mutant="24"><span class="stryker-original-code" data-mutant="25"><span class="bg-danger-light">process.env.gatsby_executing_command === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="26"><span class="badge badge-danger">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">&quot;&quot;</span><span class="stryker-original-code" data-mutant="26"><span class="bg-danger-light">`build`</span></span></span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="27"><span class="badge badge-danger">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">{}</span><span class="stryker-original-code" data-mutant="27"><span class="bg-danger-light">{
+      process.exit(1)
+    }</span></span><span class="bg-danger-light">
+  }</span></span><span class="bg-danger-light">,
+
+  error(message, error) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="28"><span class="badge badge-danger">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">{}</span><span class="stryker-original-code" data-mutant="28"><span class="bg-danger-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="29"><span class="badge badge-danger">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="30"><span class="badge badge-danger">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="31"><span class="badge badge-danger">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">arguments.length !== 1</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="32"><span class="badge badge-danger">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">arguments.length === 1 || typeof message !== `string`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="33"><span class="badge badge-danger">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="34"><span class="badge badge-danger">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">true</span><span class="stryker-original-code" data-mutant="29"><span class="stryker-original-code" data-mutant="30"><span class="stryker-original-code" data-mutant="31"><span class="stryker-original-code" data-mutant="32"><span class="stryker-original-code" data-mutant="33"><span class="stryker-original-code" data-mutant="34"><span class="bg-danger-light">arguments.length === 1</span></span></span></span><span class="bg-danger-light"> &amp;&amp; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="35"><span class="badge badge-danger">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">typeof message === `string`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="36"><span class="badge badge-danger">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="37"><span class="badge badge-danger">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">true</span><span class="stryker-original-code" data-mutant="35"><span class="stryker-original-code" data-mutant="36"><span class="stryker-original-code" data-mutant="37"><span class="bg-danger-light">typeof message !== </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">&quot;&quot;</span><span class="stryker-original-code" data-mutant="38"><span class="bg-danger-light">`string`</span></span></span></span></span></span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="39"><span class="badge badge-danger">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">{}</span><span class="stryker-original-code" data-mutant="39"><span class="bg-danger-light">{
+      error = message
+      message = error.message
+    }</span></span><span class="bg-danger-light">
+    base.error.call(this, message)
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="40"><span class="badge badge-danger">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="41"><span class="badge badge-danger">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">true</span><span class="stryker-original-code" data-mutant="40"><span class="stryker-original-code" data-mutant="41"><span class="bg-danger-light">error</span></span></span><span class="bg-danger-light">) console.log(errorFormatter.render(error))
+  }</span></span><span class="bg-danger-light">,
+  /**
+   * Set prefix on uptime.
+   * @param {string} prefix - A string to prefix uptime with.
+   */
+  uptime(prefix: string) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="42"><span class="badge badge-danger">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">{}</span><span class="stryker-original-code" data-mutant="42"><span class="bg-danger-light">{
+    this.verbose(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="43"><span class="badge badge-danger">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">&quot;&quot;</span><span class="stryker-original-code" data-mutant="43"><span class="bg-danger-light">`${prefix}: ${(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="44"><span class="badge badge-danger">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">process.uptime() / 1000</span><span class="stryker-original-code" data-mutant="44"><span class="bg-danger-light">process.uptime() * 1000</span></span><span class="bg-danger-light">).toFixed(3)}ms`</span></span><span class="bg-danger-light">)
+  }</span></span><span class="bg-danger-light">,
+  /**
+   * Time an activity.
+   * @param {string} name - Name of activity.
+   * @param {activityArgs} activityArgs - optional object with tracer parentSpan
+   * @returns {string} The elapsed time of activity.
+   */
+  activityTimer(name, activityArgs: ActivityArgs = {}) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="45"><span class="badge badge-danger">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">{}</span><span class="stryker-original-code" data-mutant="45"><span class="bg-danger-light">{
+    const spinner = reporter.activity()
+    const start = process.hrtime()
+    let status
+
+    const elapsedTime = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="46"><span class="badge badge-danger">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">{}</span><span class="stryker-original-code" data-mutant="46"><span class="bg-danger-light">{
+      var elapsed = process.hrtime(start)
+      return </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="47"><span class="badge badge-danger">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">&quot;&quot;</span><span class="stryker-original-code" data-mutant="47"><span class="bg-danger-light">`${convertHrtime(elapsed)[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="48"><span class="badge badge-danger">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">&quot;&quot;</span><span class="stryker-original-code" data-mutant="48"><span class="bg-danger-light">`seconds`</span></span><span class="bg-danger-light">].toFixed(3)} s`</span></span><span class="bg-danger-light">
+    }</span></span><span class="bg-danger-light">
+
+    const { parentSpan } = activityArgs
+    const spanArgs = parentSpan ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="49"><span class="badge badge-danger">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">{}</span><span class="stryker-original-code" data-mutant="49"><span class="bg-danger-light">{ childOf: parentSpan }</span></span><span class="bg-danger-light"> : {}
+    const span = tracer.startSpan(name, spanArgs)
+
+    return </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="50"><span class="badge badge-danger">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">{}</span><span class="stryker-original-code" data-mutant="50"><span class="bg-danger-light">{
+      start: () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="51"><span class="badge badge-danger">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">{}</span><span class="stryker-original-code" data-mutant="51"><span class="bg-danger-light">{
+        spinner.tick(name)
+      }</span></span><span class="bg-danger-light">,
+      setStatus: s =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="52"><span class="badge badge-danger">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">{}</span><span class="stryker-original-code" data-mutant="52"><span class="bg-danger-light">{
+        status = s
+        spinner.tick(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="53"><span class="badge badge-danger">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">&quot;&quot;</span><span class="stryker-original-code" data-mutant="53"><span class="bg-danger-light">`${name} — ${status}`</span></span><span class="bg-danger-light">)
+      }</span></span><span class="bg-danger-light">,
+      end: () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="54"><span class="badge badge-danger">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">{}</span><span class="stryker-original-code" data-mutant="54"><span class="bg-danger-light">{
+        span.finish()
+        const str = status
+          ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="55"><span class="badge badge-danger">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">&quot;&quot;</span><span class="stryker-original-code" data-mutant="55"><span class="bg-danger-light">`${name} — ${elapsedTime()} — ${status}`</span></span><span class="bg-danger-light">
+          : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="56"><span class="badge badge-danger">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">&quot;&quot;</span><span class="stryker-original-code" data-mutant="56"><span class="bg-danger-light">`${name} — ${elapsedTime()}`</span></span><span class="bg-danger-light">
+        reporter.success(str)
+        spinner.end()
+      }</span></span><span class="bg-danger-light">,
+      span: span,
+    }</span></span><span class="bg-danger-light">
+  }</span></span><span class="bg-danger-light">,
+}</span></span><span class="bg-null">)</span>
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>2
+:
+35</td>
+<td><code>`         `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>1</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>3
+:
+32</td>
+<td><code>`      -    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>2</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>4
+:
+30</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>3</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>5
+:
+23</td>
+<td><code>`           `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>4</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>6
+:
+38</td>
+<td><code>`./      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>5</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>8
+:
+16</td>
+<td><code>.   ....    `</code></td>
+<td><code>.   ....    `</code></td></tr>
+<tr><th>6</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>8
+:
+16</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>7</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>8
+:
+16</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>8</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>8
+:
+49</td>
+<td><code>`       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>9</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>11
+:
+32</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>10</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>11
+:
+41</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>22
+:
+41</td>
+<td><code>{
+  /... },
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>12</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>31
+:
+25</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>13</th>
+<td>Block</td>
+<td>Survived</td>
+<td>31
+:
+31</td>
+<td><code>{
+   ... 
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>14</th>
+<td>PrefixUnaryExpression</td>
+<td>Survived</td>
+<td>32
+:
+21</td>
+<td><code>!!</code></td>
+<td><code>!</code></td></tr>
+<tr><th>15</th>
+<td>PrefixUnaryExpression</td>
+<td>Survived</td>
+<td>32
+:
+22</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>16</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>38
+:
+25</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>17</th>
+<td>Block</td>
+<td>Survived</td>
+<td>38
+:
+32</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>18</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>39
+:
+8</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>19</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>39
+:
+8</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>20</th>
+<td>Block</td>
+<td>Survived</td>
+<td>39
+:
+19</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>21</th>
+<td>Block</td>
+<td>Survived</td>
+<td>47
+:
+17</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>22</th>
+<td>Block</td>
+<td>Survived</td>
+<td>52
+:
+24</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>23</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>54
+:
+8</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>24</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>54
+:
+8</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>25</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>54
+:
+8</td>
+<td><code>.   ....    `</code></td>
+<td><code>.   ....    `</code></td></tr>
+<tr><th>26</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>54
+:
+49</td>
+<td><code>`     `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>27</th>
+<td>Block</td>
+<td>Survived</td>
+<td>54
+:
+58</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>28</th>
+<td>Block</td>
+<td>Survived</td>
+<td>59
+:
+24</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>29</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>30</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>31</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code>.       !==</code></td></tr>
+<tr><th>32</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>33</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>34</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>60
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>35</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>60
+:
+34</td>
+<td><code>!== `      `</code></td>
+<td><code>=== `      `</code></td></tr>
+<tr><th>36</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>60
+:
+34</td>
+<td><code>!== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>37</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>60
+:
+34</td>
+<td><code>!== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>60
+:
+53</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>39</th>
+<td>Block</td>
+<td>Survived</td>
+<td>60
+:
+63</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>40</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>65
+:
+8</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>41</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>65
+:
+8</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>42</th>
+<td>Block</td>
+<td>Survived</td>
+<td>71
+:
+25</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>43</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>72
+:
+17</td>
+<td><code>`${  ...)}  `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>44</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>72
+:
+32</td>
+<td><code>.      () *</code></td>
+<td><code>.      () /</code></td></tr>
+<tr><th>45</th>
+<td>Block</td>
+<td>Survived</td>
+<td>80
+:
+55</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>46</th>
+<td>Block</td>
+<td>Survived</td>
+<td>85
+:
+30</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>47</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>87
+:
+13</td>
+<td><code>`${  ...)}  `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>48</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>87
+:
+39</td>
+<td><code>`       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>49</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>91
+:
+34</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>50</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>94
+:
+11</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>51</th>
+<td>Block</td>
+<td>Survived</td>
+<td>95
+:
+19</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>52</th>
+<td>Block</td>
+<td>Survived</td>
+<td>98
+:
+22</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>53</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>100
+:
+21</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>54</th>
+<td>Block</td>
+<td>Survived</td>
+<td>102
+:
+17</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>55</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>105
+:
+12</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>56</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>106
+:
+12</td>
+<td><code>`${  ... ()}`</code></td>
+<td><code>""</code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="../strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="../strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="../strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="../strykerResources/stryker.js" defer="defer"></script></body></html>

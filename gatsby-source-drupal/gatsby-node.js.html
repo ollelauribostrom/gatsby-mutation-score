@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html><head><title>gatsby-node.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">gatsby-node.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">gatsby-node.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>gatsby-node.js</td>
+<td><div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="74.15" aria-valuemin="0" aria-valuemax="100" style="width: 74.15%;">74.15
+%</div></div></td>
+<th class="text-center text-warning" style="width: 10%">74.15</th>
+<td class="text-center">109</td>
+<td class="text-center">38</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">109</th>
+<th class="text-center">38</th>
+<th class="text-center">147</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(38)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(109)</label></div>
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">const axios = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="0"><span class="badge badge-success">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">&quot;&quot;</span><span class="stryker-original-code" data-mutant="0"><span class="bg-success-light">`axios`</span></span><span class="bg-null">)
+const crypto = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="1"><span class="badge badge-success">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">&quot;&quot;</span><span class="stryker-original-code" data-mutant="1"><span class="bg-success-light">`crypto`</span></span><span class="bg-null">)
+const _ = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="2"><span class="badge badge-success">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">&quot;&quot;</span><span class="stryker-original-code" data-mutant="2"><span class="bg-success-light">`lodash`</span></span><span class="bg-null">)
+const { createRemoteFileNode } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="3"><span class="badge badge-success">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">&quot;&quot;</span><span class="stryker-original-code" data-mutant="3"><span class="bg-success-light">`gatsby-source-filesystem`</span></span><span class="bg-null">)
+const { URL } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="4"><span class="badge badge-success">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">&quot;&quot;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-success-light">`url`</span></span><span class="bg-null">)
+const { nodeFromData } = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="5"><span class="badge badge-success">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">&quot;&quot;</span><span class="stryker-original-code" data-mutant="5"><span class="bg-success-light">`./normalize`</span></span><span class="bg-null">)
+
+// Get content digest of node.
+const createContentDigest = obj =&gt;
+  crypto
+    .createHash(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="6"><span class="badge badge-success">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">&quot;&quot;</span><span class="stryker-original-code" data-mutant="6"><span class="bg-success-light">`md5`</span></span><span class="bg-null">)
+    .update(JSON.stringify(obj))
+    .digest(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="7"><span class="badge badge-danger">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&quot;&quot;</span><span class="stryker-original-code" data-mutant="7"><span class="bg-danger-light">`hex`</span></span><span class="bg-null">)
+
+exports.sourceNodes = async (
+  { actions, getNode, hasNodeChanged, store, cache, createNodeId },
+  { baseUrl, apiBase, basicAuth }
+) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="8"><span class="badge badge-success">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">{}</span><span class="stryker-original-code" data-mutant="8"><span class="bg-success-light">{
+  const { createNode } = actions
+
+  // Default apiBase to `jsonapi`
+  apiBase = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="9"><span class="badge badge-success">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="10"><span class="badge badge-success">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">apiBase &amp;&amp; `jsonapi`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="11"><span class="badge badge-success">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">true</span><span class="stryker-original-code" data-mutant="9"><span class="stryker-original-code" data-mutant="10"><span class="stryker-original-code" data-mutant="11"><span class="bg-success-light">apiBase || </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="12"><span class="badge badge-success">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">&quot;&quot;</span><span class="stryker-original-code" data-mutant="12"><span class="bg-success-light">`jsonapi`</span></span></span></span></span><span class="bg-success-light">
+
+  // Touch existing Drupal nodes so Gatsby doesn&#039;t garbage collect them.
+  // _.values(store.getState().nodes)
+  // .filter(n =&gt; n.internal.type.slice(0, 8) === `drupal__`)
+  // .forEach(n =&gt; touchNode({ nodeId: n.id }))
+
+  // Fetch articles.
+  // console.time(`fetch Drupal data`)
+  console.log(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="13"><span class="badge badge-danger">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">&quot;&quot;</span><span class="stryker-original-code" data-mutant="13"><span class="bg-danger-light">`Starting to fetch data from Drupal`</span></span><span class="bg-success-light">)
+
+  // TODO restore this
+  // let lastFetched
+  // if (
+  // store.getState().status.plugins &amp;&amp;
+  // store.getState().status.plugins[`gatsby-source-drupal`]
+  // ) {
+  // lastFetched = store.getState().status.plugins[`gatsby-source-drupal`].status
+  // .lastFetched
+  // }
+
+  const data = await axios.get(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="14"><span class="badge badge-success">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">&quot;&quot;</span><span class="stryker-original-code" data-mutant="14"><span class="bg-success-light">`${baseUrl}/${apiBase}`</span></span><span class="bg-success-light">, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="15"><span class="badge badge-danger">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">{}</span><span class="stryker-original-code" data-mutant="15"><span class="bg-danger-light">{ auth: basicAuth }</span></span><span class="bg-success-light">)
+  const allData = await Promise.all(
+    _.map(data.data.links, async (url, type) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="16"><span class="badge badge-success">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">{}</span><span class="stryker-original-code" data-mutant="16"><span class="bg-success-light">{
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="17"><span class="badge badge-danger">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="18"><span class="badge badge-success">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">type !== `self`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="19"><span class="badge badge-success">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">true</span><span class="stryker-original-code" data-mutant="17"><span class="stryker-original-code" data-mutant="18"><span class="stryker-original-code" data-mutant="19"><span class="bg-danger-light">type === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="20"><span class="badge badge-danger">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">&quot;&quot;</span><span class="stryker-original-code" data-mutant="20"><span class="bg-danger-light">`self`</span></span></span></span></span><span class="bg-success-light">) return
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="21"><span class="badge badge-danger">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="22"><span class="badge badge-success">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="23"><span class="badge badge-success">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">url</span><span class="stryker-original-code" data-mutant="21"><span class="stryker-original-code" data-mutant="22"><span class="stryker-original-code" data-mutant="23"><span class="bg-danger-light">!url</span></span></span></span><span class="bg-success-light">) return
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="24"><span class="badge badge-danger">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="25"><span class="badge badge-success">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="26"><span class="badge badge-success">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">type</span><span class="stryker-original-code" data-mutant="24"><span class="stryker-original-code" data-mutant="25"><span class="stryker-original-code" data-mutant="26"><span class="bg-danger-light">!type</span></span></span></span><span class="bg-success-light">) return
+      const getNext = async (url, data = []) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="27"><span class="badge badge-success">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">{}</span><span class="stryker-original-code" data-mutant="27"><span class="bg-success-light">{
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="28"><span class="badge badge-success">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="29"><span class="badge badge-success">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="30"><span class="badge badge-success">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">typeof url !== `object`</span><span class="stryker-original-code" data-mutant="28"><span class="stryker-original-code" data-mutant="29"><span class="stryker-original-code" data-mutant="30"><span class="bg-success-light">typeof url === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="31"><span class="badge badge-success">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">&quot;&quot;</span><span class="stryker-original-code" data-mutant="31"><span class="bg-success-light">`object`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="32"><span class="badge badge-success">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">{}</span><span class="stryker-original-code" data-mutant="32"><span class="bg-success-light">{
+          // url can be string or object containing href field
+          url = url.href
+        }</span></span><span class="bg-success-light">
+
+        let d
+        try </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="33"><span class="badge badge-success">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">{}</span><span class="stryker-original-code" data-mutant="33"><span class="bg-success-light">{
+          d = await axios.get(url, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="34"><span class="badge badge-danger">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">{}</span><span class="stryker-original-code" data-mutant="34"><span class="bg-danger-light">{ auth: basicAuth }</span></span><span class="bg-success-light">)
+        }</span></span><span class="bg-success-light"> catch (error) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="35"><span class="badge badge-danger">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">{}</span><span class="stryker-original-code" data-mutant="35"><span class="bg-danger-light">{
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="36"><span class="badge badge-danger">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="37"><span class="badge badge-danger">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">error.response || error.response.status == 405</span><span class="stryker-original-code" data-mutant="36"><span class="stryker-original-code" data-mutant="37"><span class="stryker-original-code" data-mutant="38"><span class="bg-danger-light">error.response &amp;&amp; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="39"><span class="badge badge-danger">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">error.response.status != 405</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="40"><span class="badge badge-danger">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="41"><span class="badge badge-danger">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">true</span><span class="stryker-original-code" data-mutant="39"><span class="stryker-original-code" data-mutant="40"><span class="stryker-original-code" data-mutant="41"><span class="bg-danger-light">error.response.status == 405</span></span></span></span></span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="42"><span class="badge badge-danger">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">{}</span><span class="stryker-original-code" data-mutant="42"><span class="bg-danger-light">{
+            // The endpoint doesn&#039;t support the GET method, so just skip it.
+            return []
+          }</span></span><span class="bg-danger-light"> else </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="43"><span class="badge badge-danger">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">{}</span><span class="stryker-original-code" data-mutant="43"><span class="bg-danger-light">{
+            console.error(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="44"><span class="badge badge-danger">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">&quot;&quot;</span><span class="stryker-original-code" data-mutant="44"><span class="bg-danger-light">`Failed to fetch ${url}`</span></span><span class="bg-danger-light">, error.message)
+            console.log(error.data)
+            throw error
+          }</span></span><span class="bg-danger-light">
+        }</span></span><span class="bg-success-light">
+        data = data.concat(d.data.data)
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="45"><span class="badge badge-success">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="46"><span class="badge badge-success">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">false</span><span class="stryker-original-code" data-mutant="45"><span class="stryker-original-code" data-mutant="46"><span class="bg-success-light">d.data.links.next</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="47"><span class="badge badge-success">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">{}</span><span class="stryker-original-code" data-mutant="47"><span class="bg-success-light">{
+          data = await getNext(d.data.links.next, data)
+        }</span></span><span class="bg-success-light">
+
+        return data
+      }</span></span><span class="bg-success-light">
+
+      const data = await getNext(url)
+
+      const result = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="48"><span class="badge badge-success">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">{}</span><span class="stryker-original-code" data-mutant="48"><span class="bg-success-light">{
+        type,
+        data,
+      }</span></span><span class="bg-success-light">
+
+      // eslint-disable-next-line consistent-return
+      return result
+    }</span></span><span class="bg-success-light">)
+  )
+
+  // Make list of all IDs so we can check against that when creating
+  // relationships.
+  const ids = {}
+  _.each(allData, contentType =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="49"><span class="badge badge-success">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">{}</span><span class="stryker-original-code" data-mutant="49"><span class="bg-success-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="50"><span class="badge badge-success">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="51"><span class="badge badge-success">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="52"><span class="badge badge-success">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">contentType</span><span class="stryker-original-code" data-mutant="50"><span class="stryker-original-code" data-mutant="51"><span class="stryker-original-code" data-mutant="52"><span class="bg-success-light">!contentType</span></span></span></span><span class="bg-success-light">) return
+    _.each(contentType.data, datum =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="53"><span class="badge badge-success">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">{}</span><span class="stryker-original-code" data-mutant="53"><span class="bg-success-light">{
+      ids[datum.id] = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="54"><span class="badge badge-success">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">false</span><span class="stryker-original-code" data-mutant="54"><span class="bg-success-light">true</span></span><span class="bg-success-light">
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+
+  // Create back references
+  const backRefs = {}
+
+  /**
+   * Adds back reference to linked entity, so we can later
+   * add node link.
+   */
+  const addBackRef = (linkedId, sourceDatum) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="55"><span class="badge badge-success">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">{}</span><span class="stryker-original-code" data-mutant="55"><span class="bg-success-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="56"><span class="badge badge-success">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="57"><span class="badge badge-danger">57</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="57">true</span><span class="stryker-original-code" data-mutant="56"><span class="stryker-original-code" data-mutant="57"><span class="bg-danger-light">ids[linkedId]</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="58"><span class="badge badge-success">58</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="58">{}</span><span class="stryker-original-code" data-mutant="58"><span class="bg-success-light">{
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="59"><span class="badge badge-success">59</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="59">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="60"><span class="badge badge-success">60</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="60">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="61"><span class="badge badge-success">61</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="61">backRefs[linkedId]</span><span class="stryker-original-code" data-mutant="59"><span class="stryker-original-code" data-mutant="60"><span class="stryker-original-code" data-mutant="61"><span class="bg-success-light">!backRefs[linkedId]</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="62"><span class="badge badge-success">62</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="62">{}</span><span class="stryker-original-code" data-mutant="62"><span class="bg-success-light">{
+        backRefs[linkedId] = []
+      }</span></span><span class="bg-success-light">
+      backRefs[linkedId].push(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="63"><span class="badge badge-success">63</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="63">{}</span><span class="stryker-original-code" data-mutant="63"><span class="bg-success-light">{
+        id: sourceDatum.id,
+        type: sourceDatum.type,
+      }</span></span><span class="bg-success-light">)
+    }</span></span><span class="bg-success-light">
+  }</span></span><span class="bg-success-light">
+
+  _.each(allData, contentType =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="64"><span class="badge badge-success">64</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="64">{}</span><span class="stryker-original-code" data-mutant="64"><span class="bg-success-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="65"><span class="badge badge-success">65</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="65">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="66"><span class="badge badge-success">66</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="66">contentType</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="67"><span class="badge badge-success">67</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="67">true</span><span class="stryker-original-code" data-mutant="65"><span class="stryker-original-code" data-mutant="66"><span class="stryker-original-code" data-mutant="67"><span class="bg-success-light">!contentType</span></span></span></span><span class="bg-success-light">) return
+    _.each(contentType.data, datum =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="68"><span class="badge badge-success">68</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="68">{}</span><span class="stryker-original-code" data-mutant="68"><span class="bg-success-light">{
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="69"><span class="badge badge-danger">69</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="69">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="70"><span class="badge badge-success">70</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="70">false</span><span class="stryker-original-code" data-mutant="69"><span class="stryker-original-code" data-mutant="70"><span class="bg-danger-light">datum.relationships</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="71"><span class="badge badge-success">71</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="71">{}</span><span class="stryker-original-code" data-mutant="71"><span class="bg-success-light">{
+        _.each(datum.relationships, (v, k) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="72"><span class="badge badge-success">72</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="72">{}</span><span class="stryker-original-code" data-mutant="72"><span class="bg-success-light">{
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="73"><span class="badge badge-success">73</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="73">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="74"><span class="badge badge-success">74</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="74">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="75"><span class="badge badge-success">75</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="75">v.data</span><span class="stryker-original-code" data-mutant="73"><span class="stryker-original-code" data-mutant="74"><span class="stryker-original-code" data-mutant="75"><span class="bg-success-light">!v.data</span></span></span></span><span class="bg-success-light">) return
+
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="76"><span class="badge badge-success">76</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="76">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="77"><span class="badge badge-success">77</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="77">true</span><span class="stryker-original-code" data-mutant="76"><span class="stryker-original-code" data-mutant="77"><span class="bg-success-light">_.isArray(v.data)</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="78"><span class="badge badge-success">78</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="78">{}</span><span class="stryker-original-code" data-mutant="78"><span class="bg-success-light">{
+            v.data.forEach(data =&gt; addBackRef(data.id, datum))
+          }</span></span><span class="bg-success-light"> else </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="79"><span class="badge badge-success">79</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="79">{}</span><span class="stryker-original-code" data-mutant="79"><span class="bg-success-light">{
+            addBackRef(v.data.id, datum)
+          }</span></span><span class="bg-success-light">
+        }</span></span><span class="bg-success-light">)
+      }</span></span><span class="bg-success-light">
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+
+  // Process nodes
+  const nodes = []
+  _.each(allData, contentType =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="80"><span class="badge badge-success">80</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="80">{}</span><span class="stryker-original-code" data-mutant="80"><span class="bg-success-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="81"><span class="badge badge-success">81</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="81">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="82"><span class="badge badge-success">82</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="82">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="83"><span class="badge badge-success">83</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="83">contentType</span><span class="stryker-original-code" data-mutant="81"><span class="stryker-original-code" data-mutant="82"><span class="stryker-original-code" data-mutant="83"><span class="bg-success-light">!contentType</span></span></span></span><span class="bg-success-light">) return
+
+    _.each(contentType.data, datum =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="84"><span class="badge badge-success">84</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="84">{}</span><span class="stryker-original-code" data-mutant="84"><span class="bg-success-light">{
+      const node = nodeFromData(datum, createNodeId)
+
+      node.relationships = {}
+
+      // Add relationships
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="85"><span class="badge badge-danger">85</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="85">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="86"><span class="badge badge-success">86</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="86">false</span><span class="stryker-original-code" data-mutant="85"><span class="stryker-original-code" data-mutant="86"><span class="bg-danger-light">datum.relationships</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="87"><span class="badge badge-success">87</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="87">{}</span><span class="stryker-original-code" data-mutant="87"><span class="bg-success-light">{
+        _.each(datum.relationships, (v, k) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="88"><span class="badge badge-success">88</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="88">{}</span><span class="stryker-original-code" data-mutant="88"><span class="bg-success-light">{
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="89"><span class="badge badge-success">89</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="89">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="90"><span class="badge badge-success">90</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="90">v.data</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="91"><span class="badge badge-success">91</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="91">true</span><span class="stryker-original-code" data-mutant="89"><span class="stryker-original-code" data-mutant="90"><span class="stryker-original-code" data-mutant="91"><span class="bg-success-light">!v.data</span></span></span></span><span class="bg-success-light">) return
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="92"><span class="badge badge-success">92</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="92">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="93"><span class="badge badge-success">93</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="93">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="94"><span class="badge badge-danger">94</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="94">_.isArray(v.data) || v.data.length &gt; 0</span><span class="stryker-original-code" data-mutant="92"><span class="stryker-original-code" data-mutant="93"><span class="stryker-original-code" data-mutant="94"><span class="bg-danger-light">_.isArray(v.data) &amp;&amp; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="95"><span class="badge badge-danger">95</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="95">v.data.length &gt;= 0</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="96"><span class="badge badge-success">96</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="96">v.data.length &lt;= 0</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="97"><span class="badge badge-danger">97</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="97">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="98"><span class="badge badge-success">98</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="98">false</span><span class="stryker-original-code" data-mutant="95"><span class="stryker-original-code" data-mutant="96"><span class="stryker-original-code" data-mutant="97"><span class="stryker-original-code" data-mutant="98"><span class="bg-danger-light">v.data.length &gt; 0</span></span></span></span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="99"><span class="badge badge-success">99</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="99">{}</span><span class="stryker-original-code" data-mutant="99"><span class="bg-success-light">{
+            // Create array of all ids that are in our index
+            node.relationships[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="100"><span class="badge badge-success">100</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="100">&quot;&quot;</span><span class="stryker-original-code" data-mutant="100"><span class="bg-success-light">`${k}___NODE`</span></span><span class="bg-success-light">] = _.compact(
+              v.data.map(data =&gt; (ids[data.id] ? createNodeId(data.id) : null))
+            )
+          }</span></span><span class="bg-success-light"> else if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="101"><span class="badge badge-success">101</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="101">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="102"><span class="badge badge-danger">102</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="102">true</span><span class="stryker-original-code" data-mutant="101"><span class="stryker-original-code" data-mutant="102"><span class="bg-danger-light">ids[v.data.id]</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="103"><span class="badge badge-success">103</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="103">{}</span><span class="stryker-original-code" data-mutant="103"><span class="bg-success-light">{
+            node.relationships[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="104"><span class="badge badge-success">104</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="104">&quot;&quot;</span><span class="stryker-original-code" data-mutant="104"><span class="bg-success-light">`${k}___NODE`</span></span><span class="bg-success-light">] = createNodeId(v.data.id)
+          }</span></span><span class="bg-success-light">
+        }</span></span><span class="bg-success-light">)
+      }</span></span><span class="bg-success-light">
+
+      // Add back reference relationships.
+      // Back reference relationships will need to be arrays,
+      // as we can&#039;t control how if node is referenced only once.
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="105"><span class="badge badge-success">105</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="105">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="106"><span class="badge badge-success">106</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="106">true</span><span class="stryker-original-code" data-mutant="105"><span class="stryker-original-code" data-mutant="106"><span class="bg-success-light">backRefs[datum.id]</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="107"><span class="badge badge-success">107</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="107">{}</span><span class="stryker-original-code" data-mutant="107"><span class="bg-success-light">{
+        backRefs[datum.id].forEach(ref =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="108"><span class="badge badge-success">108</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="108">{}</span><span class="stryker-original-code" data-mutant="108"><span class="bg-success-light">{
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="109"><span class="badge badge-success">109</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="109">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="110"><span class="badge badge-success">110</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="110">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="111"><span class="badge badge-success">111</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="111">node.relationships[`${ref.type}___NODE`]</span><span class="stryker-original-code" data-mutant="109"><span class="stryker-original-code" data-mutant="110"><span class="stryker-original-code" data-mutant="111"><span class="bg-success-light">!node.relationships[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="112"><span class="badge badge-success">112</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="112">&quot;&quot;</span><span class="stryker-original-code" data-mutant="112"><span class="bg-success-light">`${ref.type}___NODE`</span></span><span class="bg-success-light">]</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="113"><span class="badge badge-success">113</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="113">{}</span><span class="stryker-original-code" data-mutant="113"><span class="bg-success-light">{
+            node.relationships[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="114"><span class="badge badge-success">114</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="114">&quot;&quot;</span><span class="stryker-original-code" data-mutant="114"><span class="bg-success-light">`${ref.type}___NODE`</span></span><span class="bg-success-light">] = []
+          }</span></span><span class="bg-success-light">
+
+          node.relationships[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="115"><span class="badge badge-success">115</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="115">&quot;&quot;</span><span class="stryker-original-code" data-mutant="115"><span class="bg-success-light">`${ref.type}___NODE`</span></span><span class="bg-success-light">].push(createNodeId(ref.id))
+        }</span></span><span class="bg-success-light">)
+      }</span></span><span class="bg-success-light">
+
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="116"><span class="badge badge-danger">116</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="116">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="117"><span class="badge badge-success">117</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="117">true</span><span class="stryker-original-code" data-mutant="116"><span class="stryker-original-code" data-mutant="117"><span class="bg-danger-light">_.isEmpty(node.relationships)</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="118"><span class="badge badge-danger">118</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="118">{}</span><span class="stryker-original-code" data-mutant="118"><span class="bg-danger-light">{
+        delete node.relationships
+      }</span></span><span class="bg-success-light">
+
+      node.internal.contentDigest = createContentDigest(node)
+      nodes.push(node)
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+
+  // Download all files.
+  await Promise.all(
+    nodes.map(async node =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="119"><span class="badge badge-success">119</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="119">{}</span><span class="stryker-original-code" data-mutant="119"><span class="bg-success-light">{
+      let fileNode
+      if (
+        </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="120"><span class="badge badge-success">120</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="120">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="121"><span class="badge badge-danger">121</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="121">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="122"><span class="badge badge-success">122</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="122">node.internal.type === `files` &amp;&amp; node.internal.type === `file__file`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="123"><span class="badge badge-danger">123</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="123">node.internal.type !== `files`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="124"><span class="badge badge-danger">124</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="124">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="125"><span class="badge badge-danger">125</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="125">false</span><span class="stryker-original-code" data-mutant="120"><span class="stryker-original-code" data-mutant="121"><span class="stryker-original-code" data-mutant="122"><span class="stryker-original-code" data-mutant="123"><span class="stryker-original-code" data-mutant="124"><span class="stryker-original-code" data-mutant="125"><span class="bg-danger-light">node.internal.type === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="126"><span class="badge badge-danger">126</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="126">&quot;&quot;</span><span class="stryker-original-code" data-mutant="126"><span class="bg-danger-light">`files`</span></span></span></span></span><span class="bg-danger-light"> ||
+        </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="127"><span class="badge badge-success">127</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="127">node.internal.type !== `file__file`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="128"><span class="badge badge-success">128</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="128">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="129"><span class="badge badge-danger">129</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="129">true</span><span class="stryker-original-code" data-mutant="127"><span class="stryker-original-code" data-mutant="128"><span class="stryker-original-code" data-mutant="129"><span class="bg-danger-light">node.internal.type === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="130"><span class="badge badge-success">130</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="130">&quot;&quot;</span><span class="stryker-original-code" data-mutant="130"><span class="bg-danger-light">`file__file`</span></span></span></span></span></span></span></span><span class="bg-success-light">
+      ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="131"><span class="badge badge-success">131</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="131">{}</span><span class="stryker-original-code" data-mutant="131"><span class="bg-success-light">{
+        try </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="132"><span class="badge badge-success">132</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="132">{}</span><span class="stryker-original-code" data-mutant="132"><span class="bg-success-light">{
+          let fileUrl = node.url
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="133"><span class="badge badge-success">133</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="133">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="134"><span class="badge badge-success">134</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="134">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="135"><span class="badge badge-success">135</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="135">typeof node.uri !== `object`</span><span class="stryker-original-code" data-mutant="133"><span class="stryker-original-code" data-mutant="134"><span class="stryker-original-code" data-mutant="135"><span class="bg-success-light">typeof node.uri === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="136"><span class="badge badge-success">136</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="136">&quot;&quot;</span><span class="stryker-original-code" data-mutant="136"><span class="bg-success-light">`object`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="137"><span class="badge badge-success">137</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="137">{}</span><span class="stryker-original-code" data-mutant="137"><span class="bg-success-light">{
+            // Support JSON API 2.x file URI format https://www.drupal.org/node/2982209
+            fileUrl = node.uri.url
+          }</span></span><span class="bg-success-light">
+          // Resolve w/ baseUrl if node.uri isn&#039;t absolute.
+          const url = new URL(fileUrl, baseUrl)
+          // If we have basicAuth credentials, add them to the request.
+          const auth =
+            </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="138"><span class="badge badge-success">138</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="138">typeof basicAuth !== `object`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="139"><span class="badge badge-danger">139</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="139">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="140"><span class="badge badge-success">140</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="140">true</span><span class="stryker-original-code" data-mutant="138"><span class="stryker-original-code" data-mutant="139"><span class="stryker-original-code" data-mutant="140"><span class="bg-danger-light">typeof basicAuth === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="141"><span class="badge badge-danger">141</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="141">&quot;&quot;</span><span class="stryker-original-code" data-mutant="141"><span class="bg-danger-light">`object`</span></span></span></span></span><span class="bg-success-light">
+              ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="142"><span class="badge badge-danger">142</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="142">{}</span><span class="stryker-original-code" data-mutant="142"><span class="bg-danger-light">{
+                  htaccess_user: basicAuth.username,
+                  htaccess_pass: basicAuth.password,
+                }</span></span><span class="bg-success-light">
+              : {}
+          fileNode = await createRemoteFileNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="143"><span class="badge badge-success">143</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="143">{}</span><span class="stryker-original-code" data-mutant="143"><span class="bg-success-light">{
+            url: url.href,
+            store,
+            cache,
+            createNode,
+            createNodeId,
+            parentNodeId: node.id,
+            auth,
+          }</span></span><span class="bg-success-light">)
+        }</span></span><span class="bg-success-light"> catch (e) {
+          // Ignore
+        }
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="144"><span class="badge badge-danger">144</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="144">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="145"><span class="badge badge-success">145</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="145">true</span><span class="stryker-original-code" data-mutant="144"><span class="stryker-original-code" data-mutant="145"><span class="bg-danger-light">fileNode</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="146"><span class="badge badge-danger">146</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="146">{}</span><span class="stryker-original-code" data-mutant="146"><span class="bg-danger-light">{
+          node.localFile___NODE = fileNode.id
+        }</span></span><span class="bg-success-light">
+      }</span></span><span class="bg-success-light">
+    }</span></span><span class="bg-success-light">)
+  )
+
+  nodes.forEach(n =&gt; createNode(n))
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>0
+:
+22</td>
+<td><code>`     `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>1</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>1
+:
+23</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>2</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>2
+:
+18</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>3</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>3
+:
+41</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>4</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>4
+:
+24</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>5</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>5
+:
+33</td>
+<td><code>`./         `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>6</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>10
+:
+16</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>7</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>12
+:
+12</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>8</th>
+<td>Block</td>
+<td>Killed</td>
+<td>17
+:
+5</td>
+<td><code>{
+   ... ))
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>9</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>21
+:
+12</td>
+<td><code>|| `       `</code></td>
+<td><code></code></td></tr>
+<tr><th>10</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>21
+:
+12</td>
+<td><code>|| `       `</code></td>
+<td><code>&& `       `</code></td></tr>
+<tr><th>11</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>21
+:
+12</td>
+<td><code>|| `       `</code></td>
+<td><code></code></td></tr>
+<tr><th>12</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>21
+:
+23</td>
+<td><code>`       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>13</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>30
+:
+14</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>14</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>42
+:
+31</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>15</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>42
+:
+56</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>16</th>
+<td>Block</td>
+<td>Killed</td>
+<td>44
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>17</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>45
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>18</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>45
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code>!== `    `</code></td></tr>
+<tr><th>19</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>45
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>20</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>45
+:
+19</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>21</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>46
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>22</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>46
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>23</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>46
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>24</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>47
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>25</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>47
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>26</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>47
+:
+10</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>27</th>
+<td>Block</td>
+<td>Killed</td>
+<td>48
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>28</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>49
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>29</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>49
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>30</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>49
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code>!== `      `</code></td></tr>
+<tr><th>31</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>49
+:
+27</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>32</th>
+<td>Block</td>
+<td>Killed</td>
+<td>49
+:
+37</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>33</th>
+<td>Block</td>
+<td>Killed</td>
+<td>55
+:
+12</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>34</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>56
+:
+35</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>35</th>
+<td>Block</td>
+<td>Survived</td>
+<td>57
+:
+24</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>36</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>58
+:
+14</td>
+<td><code>.    ...   ==</code></td>
+<td><code></code></td></tr>
+<tr><th>37</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>58
+:
+14</td>
+<td><code>.    ...   ==</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>58
+:
+14</td>
+<td><code>.    ...   ==</code></td>
+<td><code>.    ...   ==</code></td></tr>
+<tr><th>39</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>58
+:
+32</td>
+<td><code>.    ...   ==</code></td>
+<td><code>.    ...   !=</code></td></tr>
+<tr><th>40</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>58
+:
+32</td>
+<td><code>.    ...   ==</code></td>
+<td><code></code></td></tr>
+<tr><th>41</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>58
+:
+32</td>
+<td><code>.    ...   ==</code></td>
+<td><code></code></td></tr>
+<tr><th>42</th>
+<td>Block</td>
+<td>Survived</td>
+<td>58
+:
+62</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>43</th>
+<td>Block</td>
+<td>Survived</td>
+<td>61
+:
+17</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>44</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>62
+:
+26</td>
+<td><code>`    ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>45</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>68
+:
+12</td>
+<td><code>.    .     .</code></td>
+<td><code></code></td></tr>
+<tr><th>46</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>68
+:
+12</td>
+<td><code>.    .     .</code></td>
+<td><code></code></td></tr>
+<tr><th>47</th>
+<td>Block</td>
+<td>Killed</td>
+<td>68
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>48</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>77
+:
+21</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>49</th>
+<td>Block</td>
+<td>Killed</td>
+<td>90
+:
+33</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>50</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>91
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>51</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>91
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>52</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>91
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>53</th>
+<td>Block</td>
+<td>Killed</td>
+<td>92
+:
+38</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>54</th>
+<td>BooleanSubstitution</td>
+<td>Killed</td>
+<td>93
+:
+22</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>55</th>
+<td>Block</td>
+<td>Killed</td>
+<td>104
+:
+48</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>56</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>105
+:
+8</td>
+<td><code>[        ]</code></td>
+<td><code></code></td></tr>
+<tr><th>57</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>105
+:
+8</td>
+<td><code>[        ]</code></td>
+<td><code></code></td></tr>
+<tr><th>58</th>
+<td>Block</td>
+<td>Killed</td>
+<td>105
+:
+23</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>59</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>106
+:
+10</td>
+<td><code>!    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>60</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>106
+:
+10</td>
+<td><code>!    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>61</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>106
+:
+10</td>
+<td><code>!    ...    ]</code></td>
+<td><code>[        ]</code></td></tr>
+<tr><th>62</th>
+<td>Block</td>
+<td>Killed</td>
+<td>106
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>63</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>109
+:
+30</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>64</th>
+<td>Block</td>
+<td>Killed</td>
+<td>116
+:
+33</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>65</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>117
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>66</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>117
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>67</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>117
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>68</th>
+<td>Block</td>
+<td>Killed</td>
+<td>118
+:
+38</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>69</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>119
+:
+10</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>70</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>119
+:
+10</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>71</th>
+<td>Block</td>
+<td>Killed</td>
+<td>119
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>72</th>
+<td>Block</td>
+<td>Killed</td>
+<td>120
+:
+46</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>73</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>121
+:
+14</td>
+<td><code>! .</code></td>
+<td><code></code></td></tr>
+<tr><th>74</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>121
+:
+14</td>
+<td><code>! .</code></td>
+<td><code></code></td></tr>
+<tr><th>75</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>121
+:
+14</td>
+<td><code>! .</code></td>
+<td><code>.</code></td></tr>
+<tr><th>76</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>123
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>77</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>123
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>78</th>
+<td>Block</td>
+<td>Killed</td>
+<td>123
+:
+33</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>79</th>
+<td>Block</td>
+<td>Killed</td>
+<td>125
+:
+17</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>80</th>
+<td>Block</td>
+<td>Killed</td>
+<td>135
+:
+33</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>81</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>136
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>82</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>136
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>83</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>136
+:
+8</td>
+<td><code>!</code></td>
+<td><code></code></td></tr>
+<tr><th>84</th>
+<td>Block</td>
+<td>Killed</td>
+<td>138
+:
+38</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>85</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>144
+:
+10</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>86</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>144
+:
+10</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>87</th>
+<td>Block</td>
+<td>Killed</td>
+<td>144
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>88</th>
+<td>Block</td>
+<td>Killed</td>
+<td>145
+:
+46</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>89</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>146
+:
+14</td>
+<td><code>! .</code></td>
+<td><code></code></td></tr>
+<tr><th>90</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>146
+:
+14</td>
+<td><code>! .</code></td>
+<td><code>.</code></td></tr>
+<tr><th>91</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>146
+:
+14</td>
+<td><code>! .</code></td>
+<td><code></code></td></tr>
+<tr><th>92</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>147
+:
+14</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>93</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>147
+:
+14</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>94</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>147
+:
+14</td>
+<td><code>.    ...    ></code></td>
+<td><code>.    ...    ></code></td></tr>
+<tr><th>95</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>147
+:
+35</td>
+<td><code>.    .       ></code></td>
+<td><code>.    .       >=</code></td></tr>
+<tr><th>96</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>147
+:
+35</td>
+<td><code>.    .       ></code></td>
+<td><code>.    .       <=</code></td></tr>
+<tr><th>97</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>147
+:
+35</td>
+<td><code>.    .       ></code></td>
+<td><code></code></td></tr>
+<tr><th>98</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>147
+:
+35</td>
+<td><code>.    .       ></code></td>
+<td><code></code></td></tr>
+<tr><th>99</th>
+<td>Block</td>
+<td>Killed</td>
+<td>147
+:
+54</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>100</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>149
+:
+31</td>
+<td><code>`${ }       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>101</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>152
+:
+21</td>
+<td><code>[ .    .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>102</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>152
+:
+21</td>
+<td><code>[ .    .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>103</th>
+<td>Block</td>
+<td>Killed</td>
+<td>152
+:
+37</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>104</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>153
+:
+31</td>
+<td><code>`${ }       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>105</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>161
+:
+10</td>
+<td><code>[     .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>106</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>161
+:
+10</td>
+<td><code>[     .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>107</th>
+<td>Block</td>
+<td>Killed</td>
+<td>161
+:
+30</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>108</th>
+<td>Block</td>
+<td>Killed</td>
+<td>162
+:
+42</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>109</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>163
+:
+14</td>
+<td><code>!    ...   `]</code></td>
+<td><code></code></td></tr>
+<tr><th>110</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>163
+:
+14</td>
+<td><code>!    ...   `]</code></td>
+<td><code></code></td></tr>
+<tr><th>111</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>163
+:
+14</td>
+<td><code>!    ...   `]</code></td>
+<td><code>.    ...   `]</code></td></tr>
+<tr><th>112</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>163
+:
+34</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>113</th>
+<td>Block</td>
+<td>Killed</td>
+<td>163
+:
+57</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>114</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>164
+:
+31</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>115</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>167
+:
+29</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>116</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>171
+:
+10</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>117</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>171
+:
+10</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>118</th>
+<td>Block</td>
+<td>Survived</td>
+<td>171
+:
+41</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>119</th>
+<td>Block</td>
+<td>Killed</td>
+<td>182
+:
+28</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>120</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>121</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>122</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>123</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>124</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>125</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>185
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>126</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>185
+:
+31</td>
+<td><code>`     `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>127</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>186
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>128</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>186
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>129</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>186
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>130</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>186
+:
+31</td>
+<td><code>`          `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>131</th>
+<td>Block</td>
+<td>Killed</td>
+<td>187
+:
+8</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>132</th>
+<td>Block</td>
+<td>Killed</td>
+<td>188
+:
+12</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>133</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>190
+:
+14</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>134</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>190
+:
+14</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>135</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>190
+:
+14</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>136</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>190
+:
+34</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>137</th>
+<td>Block</td>
+<td>Killed</td>
+<td>190
+:
+44</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>138</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>198
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code>!== `      `</code></td></tr>
+<tr><th>139</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>198
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>140</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>198
+:
+12</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>141</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>198
+:
+33</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>142</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>199
+:
+16</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>143</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>204
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>144</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>216
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>145</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>216
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>146</th>
+<td>Block</td>
+<td>Survived</td>
+<td>216
+:
+22</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>

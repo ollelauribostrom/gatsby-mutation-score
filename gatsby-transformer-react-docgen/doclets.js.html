@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html><head><title>doclets.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">doclets.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">doclets.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>doclets.js</td>
+<td><div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="76.83" aria-valuemin="0" aria-valuemax="100" style="width: 76.83%;">76.83
+%</div></div></td>
+<th class="text-center text-warning" style="width: 10%">76.83</th>
+<td class="text-center">63</td>
+<td class="text-center">19</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">63</th>
+<th class="text-center">19</th>
+<th class="text-center">82</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(19)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(63)</label></div>
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">const DOCLET_PATTERN = /^@(\w+)(?:$|\s((?:[^](?!^@\w))*))/gim
+
+let cleanDocletValue = str =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="0"><span class="badge badge-success">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">{}</span><span class="stryker-original-code" data-mutant="0"><span class="bg-success-light">{
+  str = str.trim()
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="1"><span class="badge badge-success">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="2"><span class="badge badge-danger">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="3"><span class="badge badge-danger">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">str.endsWith(`}`) || str.startsWith(`{`)</span><span class="stryker-original-code" data-mutant="1"><span class="stryker-original-code" data-mutant="2"><span class="stryker-original-code" data-mutant="3"><span class="bg-danger-light">str.endsWith(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="4"><span class="badge badge-danger">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">&quot;&quot;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-danger-light">`}`</span></span><span class="bg-danger-light">) &amp;&amp; str.startsWith(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="5"><span class="badge badge-danger">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">&quot;&quot;</span><span class="stryker-original-code" data-mutant="5"><span class="bg-danger-light">`{`</span></span><span class="bg-danger-light">)</span></span></span></span><span class="bg-success-light">) str = str.slice(1, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="6"><span class="badge badge-success">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">+1</span><span class="stryker-original-code" data-mutant="6"><span class="bg-success-light">-1</span></span><span class="bg-success-light">)
+  return str
+}</span></span><span class="bg-null">
+
+let isLiteral = str =&gt; /^(&#039;|&quot;|true|false|\d+)/.test(str.trim())
+
+/**
+ * Remove doclets from string
+ */
+export const cleanDoclets = desc =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="7"><span class="badge badge-success">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">{}</span><span class="stryker-original-code" data-mutant="7"><span class="bg-success-light">{
+  desc = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="8"><span class="badge badge-success">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">desc &amp;&amp; ``</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="9"><span class="badge badge-success">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="10"><span class="badge badge-success">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">true</span><span class="stryker-original-code" data-mutant="8"><span class="stryker-original-code" data-mutant="9"><span class="stryker-original-code" data-mutant="10"><span class="bg-success-light">desc || </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="11"><span class="badge badge-success">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="11"><span class="bg-success-light">``</span></span></span></span></span><span class="bg-success-light">
+  let idx = desc.search(DOCLET_PATTERN)
+  return (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="12"><span class="badge badge-danger">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="13"><span class="badge badge-success">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="14"><span class="badge badge-success">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">idx !== -1</span><span class="stryker-original-code" data-mutant="12"><span class="stryker-original-code" data-mutant="13"><span class="stryker-original-code" data-mutant="14"><span class="bg-danger-light">idx === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="15"><span class="badge badge-danger">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">+1</span><span class="stryker-original-code" data-mutant="15"><span class="bg-danger-light">-1</span></span></span></span></span><span class="bg-success-light"> ? desc : desc.substr(0, idx)).trim()
+}</span></span><span class="bg-null">
+
+/**
+ * Given a string, this function returns an object with doclet names as keys
+ * and their &quot;content&quot; as values.
+ *
+ * Adapted from https://github.com/reactjs/react-docgen/blob/ee8a5359c478b33a6954f4546637312764798d6b/src/utils/docblock.js#L62
+ * Updated to strip \r from the end of doclets
+ */
+const getDoclets = str =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="16"><span class="badge badge-success">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">{}</span><span class="stryker-original-code" data-mutant="16"><span class="bg-success-light">{
+  let doclets = []
+  let match = DOCLET_PATTERN.exec(str)
+  let val
+
+  for (; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ForStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="17"><span class="badge badge-success">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">false</span><span class="stryker-original-code" data-mutant="17"><span class="bg-success-light">match</span></span><span class="bg-success-light">; match = DOCLET_PATTERN.exec(str)) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="18"><span class="badge badge-success">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">{}</span><span class="stryker-original-code" data-mutant="18"><span class="bg-success-light">{
+    val = match[2] ? match[2].replace(/\r$/, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="19"><span class="badge badge-danger">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="19"><span class="bg-danger-light">``</span></span><span class="bg-success-light">) : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="20"><span class="badge badge-danger">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">false</span><span class="stryker-original-code" data-mutant="20"><span class="bg-danger-light">true</span></span><span class="bg-success-light">
+    const key = match[1]
+    doclets.push(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="21"><span class="badge badge-success">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">{}</span><span class="stryker-original-code" data-mutant="21"><span class="bg-success-light">{ tag: key, value: val }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">
+  return doclets
+}</span></span><span class="bg-null">
+
+/**
+ * parse out description doclets to an object and remove the comment
+ *
+ * @param  {ComponentMetadata|PropMetadata} obj
+ */
+export const parseDoclets = obj =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="22"><span class="badge badge-success">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">{}</span><span class="stryker-original-code" data-mutant="22"><span class="bg-success-light">{
+  let desc = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="23"><span class="badge badge-success">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">obj.description &amp;&amp; ``</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="24"><span class="badge badge-success">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="25"><span class="badge badge-success">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">true</span><span class="stryker-original-code" data-mutant="23"><span class="stryker-original-code" data-mutant="24"><span class="stryker-original-code" data-mutant="25"><span class="bg-success-light">obj.description || </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="26"><span class="badge badge-danger">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="26"><span class="bg-danger-light">``</span></span></span></span></span><span class="bg-success-light">
+  return </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="27"><span class="badge badge-success">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">getDoclets(desc) &amp;&amp; Object.create(null)</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="28"><span class="badge badge-success">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="29"><span class="badge badge-success">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">true</span><span class="stryker-original-code" data-mutant="27"><span class="stryker-original-code" data-mutant="28"><span class="stryker-original-code" data-mutant="29"><span class="bg-success-light">getDoclets(desc) || Object.create(null)</span></span></span></span><span class="bg-success-light">
+}</span></span><span class="bg-null">
+
+/**
+ * Reads the JSDoc &quot;doclets&quot; and applies certain ones to the prop type data
+ * This allows us to &quot;fix&quot; parsing errors, or unparsable data with JSDoc
+ * style comments
+ *
+ * @param  {Object} props     Object Hash of the prop metadata
+ * @param  {String} propName
+ */
+export const applyPropDoclets = prop =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="30"><span class="badge badge-success">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">{}</span><span class="stryker-original-code" data-mutant="30"><span class="bg-success-light">{
+  prop.doclets.forEach(({ tag, value }) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="31"><span class="badge badge-success">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">{}</span><span class="stryker-original-code" data-mutant="31"><span class="bg-success-light">{
+    // the @type doclet to provide a prop type
+    // Also allows enums (oneOf) if string literals are provided
+    // ex: @type {(&quot;optionA&quot;|&quot;optionB&quot;)}
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="32"><span class="badge badge-success">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="33"><span class="badge badge-success">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="34"><span class="badge badge-success">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">tag !== `type`</span><span class="stryker-original-code" data-mutant="32"><span class="stryker-original-code" data-mutant="33"><span class="stryker-original-code" data-mutant="34"><span class="bg-success-light">tag === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="35"><span class="badge badge-success">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">&quot;&quot;</span><span class="stryker-original-code" data-mutant="35"><span class="bg-success-light">`type`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="36"><span class="badge badge-success">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">{}</span><span class="stryker-original-code" data-mutant="36"><span class="bg-success-light">{
+      value = cleanDocletValue(value)
+      prop.type.name = value
+
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="37"><span class="badge badge-success">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="39"><span class="badge badge-success">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">value[0] !== `(`</span><span class="stryker-original-code" data-mutant="37"><span class="stryker-original-code" data-mutant="38"><span class="stryker-original-code" data-mutant="39"><span class="bg-danger-light">value[0] === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="40"><span class="badge badge-success">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">&quot;&quot;</span><span class="stryker-original-code" data-mutant="40"><span class="bg-danger-light">`(`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="41"><span class="badge badge-success">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">{}</span><span class="stryker-original-code" data-mutant="41"><span class="bg-success-light">{
+        value = value.substring(1, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="42"><span class="badge badge-success">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">value.length + 1</span><span class="stryker-original-code" data-mutant="42"><span class="bg-success-light">value.length - 1</span></span><span class="bg-success-light">).split(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="43"><span class="badge badge-success">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">&quot;&quot;</span><span class="stryker-original-code" data-mutant="43"><span class="bg-success-light">`|`</span></span><span class="bg-success-light">)
+        const name = value.every(isLiteral) ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="44"><span class="badge badge-success">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">&quot;&quot;</span><span class="stryker-original-code" data-mutant="44"><span class="bg-success-light">`enum`</span></span><span class="bg-success-light"> : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="45"><span class="badge badge-success">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">&quot;&quot;</span><span class="stryker-original-code" data-mutant="45"><span class="bg-success-light">`union`</span></span><span class="bg-success-light">
+        prop.type.name = name
+        prop.type.value = value.map(value =&gt;
+          </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="46"><span class="badge badge-success">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">name !== `enum`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="47"><span class="badge badge-success">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="48"><span class="badge badge-success">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">true</span><span class="stryker-original-code" data-mutant="46"><span class="stryker-original-code" data-mutant="47"><span class="stryker-original-code" data-mutant="48"><span class="bg-success-light">name === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="49"><span class="badge badge-success">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">&quot;&quot;</span><span class="stryker-original-code" data-mutant="49"><span class="bg-success-light">`enum`</span></span></span></span></span><span class="bg-success-light"> ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="50"><span class="badge badge-success">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">{}</span><span class="stryker-original-code" data-mutant="50"><span class="bg-success-light">{ value, computed: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="51"><span class="badge badge-success">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">true</span><span class="stryker-original-code" data-mutant="51"><span class="bg-success-light">false</span></span><span class="bg-success-light"> }</span></span><span class="bg-success-light"> : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="52"><span class="badge badge-success">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">{}</span><span class="stryker-original-code" data-mutant="52"><span class="bg-success-light">{ name: value }</span></span><span class="bg-success-light">
+        )
+      }</span></span><span class="bg-success-light">
+      return
+    }</span></span><span class="bg-success-light">
+
+    // Use @required to mark a prop as required
+    // useful for custom propTypes where there isn&#039;t a `.isRequired` addon
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="53"><span class="badge badge-success">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="54"><span class="badge badge-success">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="55"><span class="badge badge-success">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">tag === `required` || value</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="56"><span class="badge badge-success">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">tag !== `required`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="57"><span class="badge badge-success">57</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="57">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="58"><span class="badge badge-success">58</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="58">true</span><span class="stryker-original-code" data-mutant="53"><span class="stryker-original-code" data-mutant="54"><span class="stryker-original-code" data-mutant="55"><span class="stryker-original-code" data-mutant="56"><span class="stryker-original-code" data-mutant="57"><span class="stryker-original-code" data-mutant="58"><span class="bg-success-light">tag === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="59"><span class="badge badge-success">59</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="59">&quot;&quot;</span><span class="stryker-original-code" data-mutant="59"><span class="bg-success-light">`required`</span></span></span></span></span><span class="bg-success-light"> &amp;&amp; value</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="60"><span class="badge badge-success">60</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="60">{}</span><span class="stryker-original-code" data-mutant="60"><span class="bg-success-light">{
+      prop.required = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="61"><span class="badge badge-success">61</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="61">false</span><span class="stryker-original-code" data-mutant="61"><span class="bg-success-light">true</span></span><span class="bg-success-light">
+      return
+    }</span></span><span class="bg-success-light">
+
+    // Use @defaultValue to provide a prop&#039;s default value
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="62"><span class="badge badge-success">62</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="62">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="63"><span class="badge badge-danger">63</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="63">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="64"><span class="badge badge-danger">64</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="64">tag === `default` || tag === `defaultValue` || value != null</span><span class="stryker-original-code" data-mutant="62"><span class="stryker-original-code" data-mutant="63"><span class="stryker-original-code" data-mutant="64"><span class="bg-danger-light">(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="65"><span class="badge badge-success">65</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="65">tag === `default` &amp;&amp; tag === `defaultValue`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="66"><span class="badge badge-success">66</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="66">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="67"><span class="badge badge-danger">67</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="67">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="68"><span class="badge badge-danger">68</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="68">tag !== `default`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="69"><span class="badge badge-danger">69</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="69">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="70"><span class="badge badge-danger">70</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="70">true</span><span class="stryker-original-code" data-mutant="65"><span class="stryker-original-code" data-mutant="66"><span class="stryker-original-code" data-mutant="67"><span class="stryker-original-code" data-mutant="68"><span class="stryker-original-code" data-mutant="69"><span class="stryker-original-code" data-mutant="70"><span class="bg-danger-light">tag === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="71"><span class="badge badge-danger">71</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="71">&quot;&quot;</span><span class="stryker-original-code" data-mutant="71"><span class="bg-danger-light">`default`</span></span></span></span></span><span class="bg-danger-light"> || </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="72"><span class="badge badge-success">72</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="72">tag !== `defaultValue`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="73"><span class="badge badge-success">73</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="73">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="74"><span class="badge badge-danger">74</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="74">true</span><span class="stryker-original-code" data-mutant="72"><span class="stryker-original-code" data-mutant="73"><span class="stryker-original-code" data-mutant="74"><span class="bg-danger-light">tag === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="75"><span class="badge badge-success">75</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="75">&quot;&quot;</span><span class="stryker-original-code" data-mutant="75"><span class="bg-danger-light">`defaultValue`</span></span></span></span></span></span></span></span><span class="bg-danger-light">) &amp;&amp; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="76"><span class="badge badge-success">76</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="76">value == null</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="77"><span class="badge badge-success">77</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="77">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="78"><span class="badge badge-danger">78</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="78">true</span><span class="stryker-original-code" data-mutant="76"><span class="stryker-original-code" data-mutant="77"><span class="stryker-original-code" data-mutant="78"><span class="bg-danger-light">value != null</span></span></span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="79"><span class="badge badge-success">79</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="79">{}</span><span class="stryker-original-code" data-mutant="79"><span class="bg-success-light">{
+      prop.defaultValue = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="80"><span class="badge badge-success">80</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="80">{}</span><span class="stryker-original-code" data-mutant="80"><span class="bg-success-light">{ value, computed: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="81"><span class="badge badge-success">81</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="81">true</span><span class="stryker-original-code" data-mutant="81"><span class="bg-success-light">false</span></span><span class="bg-success-light"> }</span></span><span class="bg-success-light">
+      return
+    }</span></span><span class="bg-success-light">
+  }</span></span><span class="bg-success-light">)
+
+  return prop
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>Block</td>
+<td>Killed</td>
+<td>2
+:
+30</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>1</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>4
+:
+6</td>
+<td><code>.    ...(`{`)</code></td>
+<td><code></code></td></tr>
+<tr><th>2</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>4
+:
+6</td>
+<td><code>.    ...(`{`)</code></td>
+<td><code></code></td></tr>
+<tr><th>3</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>4
+:
+6</td>
+<td><code>.    ...(`{`)</code></td>
+<td><code>.    ...(`{`)</code></td></tr>
+<tr><th>4</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>4
+:
+19</td>
+<td><code>`}`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>5</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>4
+:
+42</td>
+<td><code>`{`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>6</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>4
+:
+67</td>
+<td><code>-</code></td>
+<td><code>+</code></td></tr>
+<tr><th>7</th>
+<td>Block</td>
+<td>Killed</td>
+<td>13
+:
+36</td>
+<td><code>{
+   ... ()
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>8</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>14
+:
+9</td>
+<td><code>|| ``</code></td>
+<td><code>&& ``</code></td></tr>
+<tr><th>9</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>14
+:
+9</td>
+<td><code>|| ``</code></td>
+<td><code></code></td></tr>
+<tr><th>10</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>14
+:
+9</td>
+<td><code>|| ``</code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>14
+:
+17</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>12</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>16
+:
+10</td>
+<td><code>=== -</code></td>
+<td><code></code></td></tr>
+<tr><th>13</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>16
+:
+10</td>
+<td><code>=== -</code></td>
+<td><code></code></td></tr>
+<tr><th>14</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>16
+:
+10</td>
+<td><code>=== -</code></td>
+<td><code>!== -</code></td></tr>
+<tr><th>15</th>
+<td>PrefixUnaryExpression</td>
+<td>Survived</td>
+<td>16
+:
+18</td>
+<td><code>-</code></td>
+<td><code>+</code></td></tr>
+<tr><th>16</th>
+<td>Block</td>
+<td>Killed</td>
+<td>26
+:
+26</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>17</th>
+<td>ForStatement</td>
+<td>Killed</td>
+<td>31
+:
+9</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>18</th>
+<td>Block</td>
+<td>Killed</td>
+<td>31
+:
+50</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>19</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>32
+:
+45</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>20</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>32
+:
+51</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>21</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>34
+:
+17</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>22</th>
+<td>Block</td>
+<td>Killed</td>
+<td>44
+:
+35</td>
+<td><code>{
+   ...  )
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>23</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>45
+:
+13</td>
+<td><code>.    ...|| ``</code></td>
+<td><code>.    ...&& ``</code></td></tr>
+<tr><th>24</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>45
+:
+13</td>
+<td><code>.    ...|| ``</code></td>
+<td><code></code></td></tr>
+<tr><th>25</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>45
+:
+13</td>
+<td><code>.    ...|| ``</code></td>
+<td><code></code></td></tr>
+<tr><th>26</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>45
+:
+32</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>27</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>46
+:
+9</td>
+<td><code>(    ...    )</code></td>
+<td><code>(    ...    )</code></td></tr>
+<tr><th>28</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>46
+:
+9</td>
+<td><code>(    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>29</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>46
+:
+9</td>
+<td><code>(    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>30</th>
+<td>Block</td>
+<td>Killed</td>
+<td>57
+:
+40</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>31</th>
+<td>Block</td>
+<td>Killed</td>
+<td>58
+:
+43</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>32</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>62
+:
+8</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>33</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>62
+:
+8</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>34</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>62
+:
+8</td>
+<td><code>=== `    `</code></td>
+<td><code>!== `    `</code></td></tr>
+<tr><th>35</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>62
+:
+16</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>36</th>
+<td>Block</td>
+<td>Killed</td>
+<td>62
+:
+24</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>37</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>66
+:
+10</td>
+<td><code>[ ] === `(`</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>66
+:
+10</td>
+<td><code>[ ] === `(`</code></td>
+<td><code></code></td></tr>
+<tr><th>39</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>66
+:
+10</td>
+<td><code>[ ] === `(`</code></td>
+<td><code>[ ] !== `(`</code></td></tr>
+<tr><th>40</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>66
+:
+23</td>
+<td><code>`(`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>41</th>
+<td>Block</td>
+<td>Killed</td>
+<td>66
+:
+28</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>42</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>67
+:
+35</td>
+<td><code>.       -</code></td>
+<td><code>.       +</code></td></tr>
+<tr><th>43</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>67
+:
+59</td>
+<td><code>`|`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>44</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>68
+:
+46</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>45</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>68
+:
+55</td>
+<td><code>`     `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>46</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>71
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code>!== `    `</code></td></tr>
+<tr><th>47</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>71
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>48</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>71
+:
+10</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>49</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>71
+:
+19</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>50</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>71
+:
+28</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>51</th>
+<td>BooleanSubstitution</td>
+<td>Killed</td>
+<td>71
+:
+47</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>52</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>71
+:
+57</td>
+<td><code>{     :       }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>53</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `... ` &&</code></td>
+<td><code></code></td></tr>
+<tr><th>54</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `... ` &&</code></td>
+<td><code></code></td></tr>
+<tr><th>55</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `... ` &&</code></td>
+<td><code>=== `... ` ||</code></td></tr>
+<tr><th>56</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `        `</code></td>
+<td><code>!== `        `</code></td></tr>
+<tr><th>57</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `        `</code></td>
+<td><code></code></td></tr>
+<tr><th>58</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>79
+:
+8</td>
+<td><code>=== `        `</code></td>
+<td><code></code></td></tr>
+<tr><th>59</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>79
+:
+16</td>
+<td><code>`        `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>60</th>
+<td>Block</td>
+<td>Killed</td>
+<td>79
+:
+37</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>61</th>
+<td>BooleanSubstitution</td>
+<td>Killed</td>
+<td>80
+:
+22</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>62</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>85
+:
+8</td>
+<td><code>(    ...   !=</code></td>
+<td><code></code></td></tr>
+<tr><th>63</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>85
+:
+8</td>
+<td><code>(    ...   !=</code></td>
+<td><code></code></td></tr>
+<tr><th>64</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>85
+:
+8</td>
+<td><code>(    ...   !=</code></td>
+<td><code>=== `...   !=</code></td></tr>
+<tr><th>65</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>85
+:
+9</td>
+<td><code>=== `...    `</code></td>
+<td><code>=== `...    `</code></td></tr>
+<tr><th>66</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>85
+:
+9</td>
+<td><code>=== `...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>67</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>85
+:
+9</td>
+<td><code>=== `...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>68</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>85
+:
+9</td>
+<td><code>=== `       `</code></td>
+<td><code>!== `       `</code></td></tr>
+<tr><th>69</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>85
+:
+9</td>
+<td><code>=== `       `</code></td>
+<td><code></code></td></tr>
+<tr><th>70</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>85
+:
+9</td>
+<td><code>=== `       `</code></td>
+<td><code></code></td></tr>
+<tr><th>71</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>85
+:
+17</td>
+<td><code>`       `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>72</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>85
+:
+30</td>
+<td><code>=== `...    `</code></td>
+<td><code>!== `...    `</code></td></tr>
+<tr><th>73</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>85
+:
+30</td>
+<td><code>=== `...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>74</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>85
+:
+30</td>
+<td><code>=== `...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>75</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>85
+:
+38</td>
+<td><code>`            `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>76</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>85
+:
+57</td>
+<td><code>!=</code></td>
+<td><code>==</code></td></tr>
+<tr><th>77</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>85
+:
+57</td>
+<td><code>!=</code></td>
+<td><code></code></td></tr>
+<tr><th>78</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>85
+:
+57</td>
+<td><code>!=</code></td>
+<td><code></code></td></tr>
+<tr><th>79</th>
+<td>Block</td>
+<td>Killed</td>
+<td>85
+:
+72</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>80</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>86
+:
+26</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>81</th>
+<td>BooleanSubstitution</td>
+<td>Killed</td>
+<td>86
+:
+45</td>
+<td><code></code></td>
+<td><code></code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>

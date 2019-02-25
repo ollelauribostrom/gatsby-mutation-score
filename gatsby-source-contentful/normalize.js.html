@@ -1,0 +1,2920 @@
+<!DOCTYPE html>
+<html><head><title>normalize.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">normalize.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">normalize.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>normalize.js</td>
+<td><div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="77.57" aria-valuemin="0" aria-valuemax="100" style="width: 77.57%;">77.57
+%</div></div></td>
+<th class="text-center text-warning" style="width: 10%">77.57</th>
+<td class="text-center">211</td>
+<td class="text-center">61</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">211</th>
+<th class="text-center">61</th>
+<th class="text-center">272</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(61)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(211)</label></div>
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">const _ = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="0"><span class="badge badge-success">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">&quot;&quot;</span><span class="stryker-original-code" data-mutant="0"><span class="bg-success-light">`lodash`</span></span><span class="bg-null">)
+const crypto = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="1"><span class="badge badge-success">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">&quot;&quot;</span><span class="stryker-original-code" data-mutant="1"><span class="bg-success-light">`crypto`</span></span><span class="bg-null">)
+const stringify = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="2"><span class="badge badge-success">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">&quot;&quot;</span><span class="stryker-original-code" data-mutant="2"><span class="bg-success-light">`json-stringify-safe`</span></span><span class="bg-null">)
+const deepMap = require(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="3"><span class="badge badge-success">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">&quot;&quot;</span><span class="stryker-original-code" data-mutant="3"><span class="bg-success-light">`deep-map`</span></span><span class="bg-null">)
+
+const digest = str =&gt;
+  crypto
+    .createHash(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="4"><span class="badge badge-success">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">&quot;&quot;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-success-light">`md5`</span></span><span class="bg-null">)
+    .update(str)
+    .digest(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="5"><span class="badge badge-success">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">&quot;&quot;</span><span class="stryker-original-code" data-mutant="5"><span class="bg-success-light">`hex`</span></span><span class="bg-null">)
+const typePrefix = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="6"><span class="badge badge-success">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">&quot;&quot;</span><span class="stryker-original-code" data-mutant="6"><span class="bg-success-light">`Contentful`</span></span><span class="bg-null">
+const makeTypeName = type =&gt; _.upperFirst(_.camelCase(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="7"><span class="badge badge-success">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&quot;&quot;</span><span class="stryker-original-code" data-mutant="7"><span class="bg-success-light">`${typePrefix} ${type}`</span></span><span class="bg-null">))
+
+const getLocalizedField = ({ field, locale, localesFallback }) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="8"><span class="badge badge-success">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">{}</span><span class="stryker-original-code" data-mutant="8"><span class="bg-success-light">{
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="9"><span class="badge badge-success">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="10"><span class="badge badge-success">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="11"><span class="badge badge-success">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">_.isUndefined(field[locale.code])</span><span class="stryker-original-code" data-mutant="9"><span class="stryker-original-code" data-mutant="10"><span class="stryker-original-code" data-mutant="11"><span class="bg-success-light">!_.isUndefined(field[locale.code])</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="12"><span class="badge badge-success">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">{}</span><span class="stryker-original-code" data-mutant="12"><span class="bg-success-light">{
+    return field[locale.code]
+  }</span></span><span class="bg-success-light"> else if (
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="13"><span class="badge badge-success">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="14"><span class="badge badge-success">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="15"><span class="badge badge-danger">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">!_.isUndefined(locale.code) || !_.isUndefined(localesFallback[locale.code])</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="16"><span class="badge badge-success">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">_.isUndefined(locale.code)</span><span class="stryker-original-code" data-mutant="13"><span class="stryker-original-code" data-mutant="14"><span class="stryker-original-code" data-mutant="15"><span class="stryker-original-code" data-mutant="16"><span class="bg-danger-light">!_.isUndefined(locale.code)</span></span><span class="bg-danger-light"> &amp;&amp;
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="17"><span class="badge badge-success">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">_.isUndefined(localesFallback[locale.code])</span><span class="stryker-original-code" data-mutant="17"><span class="bg-danger-light">!_.isUndefined(localesFallback[locale.code])</span></span></span></span></span><span class="bg-success-light">
+  ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="18"><span class="badge badge-success">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">{}</span><span class="stryker-original-code" data-mutant="18"><span class="bg-success-light">{
+    return getLocalizedField(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="19"><span class="badge badge-success">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">{}</span><span class="stryker-original-code" data-mutant="19"><span class="bg-success-light">{
+      field,
+      locale: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="20"><span class="badge badge-success">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">{}</span><span class="stryker-original-code" data-mutant="20"><span class="bg-success-light">{ code: localesFallback[locale.code] }</span></span><span class="bg-success-light">,
+      localesFallback,
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light"> else </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="21"><span class="badge badge-success">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">{}</span><span class="stryker-original-code" data-mutant="21"><span class="bg-success-light">{
+    return null
+  }</span></span><span class="bg-success-light">
+}</span></span><span class="bg-null">
+const buildFallbackChain = locales =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="22"><span class="badge badge-success">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">{}</span><span class="stryker-original-code" data-mutant="22"><span class="bg-success-light">{
+  const localesFallback = {}
+  _.each(
+    locales,
+    locale =&gt; (localesFallback[locale.code] = locale.fallbackCode)
+  )
+  return localesFallback
+}</span></span><span class="bg-null">
+const makeGetLocalizedField = ({ locale, localesFallback }) =&gt; field =&gt;
+  getLocalizedField(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="23"><span class="badge badge-success">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">{}</span><span class="stryker-original-code" data-mutant="23"><span class="bg-success-light">{ field, locale, localesFallback }</span></span><span class="bg-null">)
+
+exports.getLocalizedField = getLocalizedField
+exports.buildFallbackChain = buildFallbackChain
+
+// If the id starts with a number, left-pad it with a c (for Contentful of
+// course :-))
+const fixId = id =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="24"><span class="badge badge-success">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">{}</span><span class="stryker-original-code" data-mutant="24"><span class="bg-success-light">{
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="25"><span class="badge badge-danger">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="26"><span class="badge badge-danger">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="27"><span class="badge badge-danger">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">_.isString(id)</span><span class="stryker-original-code" data-mutant="25"><span class="stryker-original-code" data-mutant="26"><span class="stryker-original-code" data-mutant="27"><span class="bg-danger-light">!_.isString(id)</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="28"><span class="badge badge-danger">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">{}</span><span class="stryker-original-code" data-mutant="28"><span class="bg-danger-light">{
+    id = id.toString()
+  }</span></span><span class="bg-success-light">
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="29"><span class="badge badge-success">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="30"><span class="badge badge-success">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="31"><span class="badge badge-success">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">isNaN(id.slice(0, 1))</span><span class="stryker-original-code" data-mutant="29"><span class="stryker-original-code" data-mutant="30"><span class="stryker-original-code" data-mutant="31"><span class="bg-success-light">!isNaN(id.slice(0, 1))</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="32"><span class="badge badge-success">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">{}</span><span class="stryker-original-code" data-mutant="32"><span class="bg-success-light">{
+    return </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="33"><span class="badge badge-success">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">&quot;&quot;</span><span class="stryker-original-code" data-mutant="33"><span class="bg-success-light">`c${id}`</span></span><span class="bg-success-light">
+  }</span></span><span class="bg-success-light">
+  return id
+}</span></span><span class="bg-null">
+exports.fixId = fixId
+
+exports.fixIds = object =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="34"><span class="badge badge-success">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">{}</span><span class="stryker-original-code" data-mutant="34"><span class="bg-success-light">{
+  const out = deepMap(object, (v, k) =&gt; (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="35"><span class="badge badge-success">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">k !== `id`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="36"><span class="badge badge-danger">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="37"><span class="badge badge-success">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">true</span><span class="stryker-original-code" data-mutant="35"><span class="stryker-original-code" data-mutant="36"><span class="stryker-original-code" data-mutant="37"><span class="bg-danger-light">k === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">&quot;&quot;</span><span class="stryker-original-code" data-mutant="38"><span class="bg-danger-light">`id`</span></span></span></span></span><span class="bg-success-light"> ? fixId(v) : v))
+
+  return </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="39"><span class="badge badge-success">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">{}</span><span class="stryker-original-code" data-mutant="39"><span class="bg-success-light">{
+    ...out,
+    sys: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="40"><span class="badge badge-success">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">{}</span><span class="stryker-original-code" data-mutant="40"><span class="bg-success-light">{
+      ...out.sys,
+      contentful_id: object.sys.id,
+    }</span></span><span class="bg-success-light">,
+  }</span></span><span class="bg-success-light">
+}</span></span><span class="bg-null">
+
+const makeId = ({ id, currentLocale, defaultLocale }) =&gt;
+  </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="41"><span class="badge badge-success">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">currentLocale !== defaultLocale</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="42"><span class="badge badge-success">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="43"><span class="badge badge-success">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">true</span><span class="stryker-original-code" data-mutant="41"><span class="stryker-original-code" data-mutant="42"><span class="stryker-original-code" data-mutant="43"><span class="bg-success-light">currentLocale === defaultLocale</span></span></span></span><span class="bg-null"> ? id : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="44"><span class="badge badge-success">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">&quot;&quot;</span><span class="stryker-original-code" data-mutant="44"><span class="bg-success-light">`${id}___${currentLocale}`</span></span><span class="bg-null">
+
+exports.makeId = makeId
+
+const makeMakeId = ({ currentLocale, defaultLocale, createNodeId }) =&gt; id =&gt;
+  createNodeId(makeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="45"><span class="badge badge-danger">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">{}</span><span class="stryker-original-code" data-mutant="45"><span class="bg-danger-light">{ id, currentLocale, defaultLocale }</span></span><span class="bg-null">))
+
+exports.buildEntryList = ({ contentTypeItems, currentSyncData }) =&gt;
+  contentTypeItems.map(contentType =&gt;
+    currentSyncData.entries.filter(
+      entry =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="46"><span class="badge badge-success">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="47"><span class="badge badge-success">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">entry.sys.contentType.sys.id !== contentType.sys.id</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="48"><span class="badge badge-success">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">true</span><span class="stryker-original-code" data-mutant="46"><span class="stryker-original-code" data-mutant="47"><span class="stryker-original-code" data-mutant="48"><span class="bg-success-light">entry.sys.contentType.sys.id === contentType.sys.id</span></span></span></span><span class="bg-null">
+    )
+  )
+
+exports.buildResolvableSet = ({
+  entryList,
+  existingNodes = [],
+  assets = [],
+  locales,
+  defaultLocale,
+}) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="49"><span class="badge badge-success">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">{}</span><span class="stryker-original-code" data-mutant="49"><span class="bg-success-light">{
+  const resolvable = new Set()
+  existingNodes.forEach(n =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="50"><span class="badge badge-danger">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">{}</span><span class="stryker-original-code" data-mutant="50"><span class="bg-danger-light">{
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="51"><span class="badge badge-danger">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="52"><span class="badge badge-danger">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">true</span><span class="stryker-original-code" data-mutant="51"><span class="stryker-original-code" data-mutant="52"><span class="bg-danger-light">n.contentful_id</span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="53"><span class="badge badge-danger">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">{}</span><span class="stryker-original-code" data-mutant="53"><span class="bg-danger-light">{
+      // We need to add only root level resolvable (assets and entries)
+      // derived nodes (markdown or JSON) will be recreated if needed.
+      // We also need to apply `fixId` as some objects will have ids
+      // prefixed with `c` and fixIds will recursively apply that
+      // and resolvable ids need to match that.
+      resolvable.add(fixId(n.contentful_id))
+    }</span></span><span class="bg-danger-light">
+  }</span></span><span class="bg-success-light">)
+
+  entryList.forEach(entries =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="54"><span class="badge badge-success">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">{}</span><span class="stryker-original-code" data-mutant="54"><span class="bg-success-light">{
+    entries.forEach(entry =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="55"><span class="badge badge-success">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">{}</span><span class="stryker-original-code" data-mutant="55"><span class="bg-success-light">{
+      resolvable.add(entry.sys.id)
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+  assets.forEach(assetItem =&gt; resolvable.add(assetItem.sys.id))
+
+  return resolvable
+}</span></span><span class="bg-null">
+
+exports.buildForeignReferenceMap = ({
+  contentTypeItems,
+  entryList,
+  resolvable,
+  defaultLocale,
+  locales,
+}) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="56"><span class="badge badge-success">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">{}</span><span class="stryker-original-code" data-mutant="56"><span class="bg-success-light">{
+  const foreignReferenceMap = {}
+  contentTypeItems.forEach((contentTypeItem, i) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="57"><span class="badge badge-success">57</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="57">{}</span><span class="stryker-original-code" data-mutant="57"><span class="bg-success-light">{
+    const contentTypeItemId = contentTypeItem.name.toLowerCase()
+    entryList[i].forEach(entryItem =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="58"><span class="badge badge-success">58</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="58">{}</span><span class="stryker-original-code" data-mutant="58"><span class="bg-success-light">{
+      const entryItemFields = entryItem.fields
+      Object.keys(entryItemFields).forEach(entryItemFieldKey =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="59"><span class="badge badge-success">59</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="59">{}</span><span class="stryker-original-code" data-mutant="59"><span class="bg-success-light">{
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="60"><span class="badge badge-success">60</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="60">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="61"><span class="badge badge-danger">61</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="61">true</span><span class="stryker-original-code" data-mutant="60"><span class="stryker-original-code" data-mutant="61"><span class="bg-danger-light">entryItemFields[entryItemFieldKey]</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="62"><span class="badge badge-success">62</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="62">{}</span><span class="stryker-original-code" data-mutant="62"><span class="bg-success-light">{
+          let entryItemFieldValue =
+            entryItemFields[entryItemFieldKey][defaultLocale]
+          // If this is an array of single reference object
+          // add to the reference map, otherwise ignore.
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="63"><span class="badge badge-success">63</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="63">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="64"><span class="badge badge-success">64</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="64">true</span><span class="stryker-original-code" data-mutant="63"><span class="stryker-original-code" data-mutant="64"><span class="bg-success-light">Array.isArray(entryItemFieldValue)</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="65"><span class="badge badge-success">65</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="65">{}</span><span class="stryker-original-code" data-mutant="65"><span class="bg-success-light">{
+            if (
+              </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="66"><span class="badge badge-success">66</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="66">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="67"><span class="badge badge-success">67</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="67">entryItemFieldValue[0] &amp;&amp; entryItemFieldValue[0].sys &amp;&amp; entryItemFieldValue[0].sys.type || entryItemFieldValue[0].sys.id</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="68"><span class="badge badge-success">68</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="68">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="69"><span class="badge badge-success">69</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="69">entryItemFieldValue[0] &amp;&amp; entryItemFieldValue[0].sys || entryItemFieldValue[0].sys.type</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="70"><span class="badge badge-success">70</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="70">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="71"><span class="badge badge-success">71</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="71">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="72"><span class="badge badge-success">72</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="72">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="73"><span class="badge badge-success">73</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="73">entryItemFieldValue[0] || entryItemFieldValue[0].sys</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="74"><span class="badge badge-success">74</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="74">true</span><span class="stryker-original-code" data-mutant="66"><span class="stryker-original-code" data-mutant="67"><span class="stryker-original-code" data-mutant="68"><span class="stryker-original-code" data-mutant="69"><span class="stryker-original-code" data-mutant="70"><span class="stryker-original-code" data-mutant="71"><span class="stryker-original-code" data-mutant="72"><span class="stryker-original-code" data-mutant="73"><span class="stryker-original-code" data-mutant="74"><span class="bg-success-light">entryItemFieldValue[0] &amp;&amp;
+              entryItemFieldValue[0].sys</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+              entryItemFieldValue[0].sys.type</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+              entryItemFieldValue[0].sys.id</span></span></span></span><span class="bg-success-light">
+            ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="75"><span class="badge badge-success">75</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="75">{}</span><span class="stryker-original-code" data-mutant="75"><span class="bg-success-light">{
+              entryItemFieldValue.forEach(v =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="76"><span class="badge badge-success">76</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="76">{}</span><span class="stryker-original-code" data-mutant="76"><span class="bg-success-light">{
+                // Don&#039;t create link to an unresolvable field.
+                if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="77"><span class="badge badge-danger">77</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="77">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="78"><span class="badge badge-success">78</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="78">resolvable.has(v.sys.id)</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="79"><span class="badge badge-success">79</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="79">true</span><span class="stryker-original-code" data-mutant="77"><span class="stryker-original-code" data-mutant="78"><span class="stryker-original-code" data-mutant="79"><span class="bg-danger-light">!resolvable.has(v.sys.id)</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="80"><span class="badge badge-danger">80</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="80">{}</span><span class="stryker-original-code" data-mutant="80"><span class="bg-danger-light">{
+                  return
+                }</span></span><span class="bg-success-light">
+
+                if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="81"><span class="badge badge-success">81</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="81">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="82"><span class="badge badge-success">82</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="82">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="83"><span class="badge badge-success">83</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="83">foreignReferenceMap[v.sys.id]</span><span class="stryker-original-code" data-mutant="81"><span class="stryker-original-code" data-mutant="82"><span class="stryker-original-code" data-mutant="83"><span class="bg-success-light">!foreignReferenceMap[v.sys.id]</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="84"><span class="badge badge-success">84</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="84">{}</span><span class="stryker-original-code" data-mutant="84"><span class="bg-success-light">{
+                  foreignReferenceMap[v.sys.id] = []
+                }</span></span><span class="bg-success-light">
+                foreignReferenceMap[v.sys.id].push(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="85"><span class="badge badge-success">85</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="85">{}</span><span class="stryker-original-code" data-mutant="85"><span class="bg-success-light">{
+                  name: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="86"><span class="badge badge-success">86</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="86">&quot;&quot;</span><span class="stryker-original-code" data-mutant="86"><span class="bg-success-light">`${contentTypeItemId}___NODE`</span></span><span class="bg-success-light">,
+                  id: entryItem.sys.id,
+                }</span></span><span class="bg-success-light">)
+              }</span></span><span class="bg-success-light">)
+            }</span></span><span class="bg-success-light">
+          }</span></span><span class="bg-success-light"> else if (
+            </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="87"><span class="badge badge-success">87</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="87">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="88"><span class="badge badge-success">88</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="88">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="89"><span class="badge badge-success">89</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="89">entryItemFieldValue &amp;&amp; entryItemFieldValue.sys &amp;&amp; entryItemFieldValue.sys.type &amp;&amp; entryItemFieldValue.sys.id || resolvable.has(entryItemFieldValue.sys.id)</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="90"><span class="badge badge-success">90</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="90">entryItemFieldValue &amp;&amp; entryItemFieldValue.sys &amp;&amp; entryItemFieldValue.sys.type || entryItemFieldValue.sys.id</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="91"><span class="badge badge-success">91</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="91">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="92"><span class="badge badge-success">92</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="92">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="93"><span class="badge badge-success">93</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="93">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="94"><span class="badge badge-success">94</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="94">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="95"><span class="badge badge-success">95</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="95">entryItemFieldValue &amp;&amp; entryItemFieldValue.sys || entryItemFieldValue.sys.type</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="96"><span class="badge badge-success">96</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="96">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="97"><span class="badge badge-success">97</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="97">entryItemFieldValue || entryItemFieldValue.sys</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="98"><span class="badge badge-success">98</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="98">true</span><span class="stryker-original-code" data-mutant="87"><span class="stryker-original-code" data-mutant="88"><span class="stryker-original-code" data-mutant="89"><span class="stryker-original-code" data-mutant="90"><span class="stryker-original-code" data-mutant="91"><span class="stryker-original-code" data-mutant="92"><span class="stryker-original-code" data-mutant="93"><span class="stryker-original-code" data-mutant="94"><span class="stryker-original-code" data-mutant="95"><span class="stryker-original-code" data-mutant="96"><span class="stryker-original-code" data-mutant="97"><span class="stryker-original-code" data-mutant="98"><span class="bg-success-light">entryItemFieldValue &amp;&amp;
+            entryItemFieldValue.sys</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+            entryItemFieldValue.sys.type</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+            entryItemFieldValue.sys.id</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+            resolvable.has(entryItemFieldValue.sys.id)</span></span></span></span><span class="bg-success-light">
+          ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="99"><span class="badge badge-success">99</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="99">{}</span><span class="stryker-original-code" data-mutant="99"><span class="bg-success-light">{
+            if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="100"><span class="badge badge-success">100</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="100">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="101"><span class="badge badge-success">101</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="101">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="102"><span class="badge badge-success">102</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="102">foreignReferenceMap[entryItemFieldValue.sys.id]</span><span class="stryker-original-code" data-mutant="100"><span class="stryker-original-code" data-mutant="101"><span class="stryker-original-code" data-mutant="102"><span class="bg-success-light">!foreignReferenceMap[entryItemFieldValue.sys.id]</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="103"><span class="badge badge-success">103</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="103">{}</span><span class="stryker-original-code" data-mutant="103"><span class="bg-success-light">{
+              foreignReferenceMap[entryItemFieldValue.sys.id] = []
+            }</span></span><span class="bg-success-light">
+            foreignReferenceMap[entryItemFieldValue.sys.id].push(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="104"><span class="badge badge-success">104</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="104">{}</span><span class="stryker-original-code" data-mutant="104"><span class="bg-success-light">{
+              name: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="105"><span class="badge badge-success">105</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="105">&quot;&quot;</span><span class="stryker-original-code" data-mutant="105"><span class="bg-success-light">`${contentTypeItemId}___NODE`</span></span><span class="bg-success-light">,
+              id: entryItem.sys.id,
+            }</span></span><span class="bg-success-light">)
+          }</span></span><span class="bg-success-light">
+        }</span></span><span class="bg-success-light">
+      }</span></span><span class="bg-success-light">)
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+
+  return foreignReferenceMap
+}</span></span><span class="bg-null">
+
+function prepareTextNode(node, key, text, createNodeId) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="106"><span class="badge badge-success">106</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="106">{}</span><span class="stryker-original-code" data-mutant="106"><span class="bg-success-light">{
+  const str = _.isString(text) ? text : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="107"><span class="badge badge-danger">107</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="107">&quot;&quot;</span><span class="stryker-original-code" data-mutant="107"><span class="bg-danger-light">` `</span></span><span class="bg-success-light">
+  const textNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="108"><span class="badge badge-success">108</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="108">{}</span><span class="stryker-original-code" data-mutant="108"><span class="bg-success-light">{
+    id: createNodeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="109"><span class="badge badge-danger">109</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="109">&quot;&quot;</span><span class="stryker-original-code" data-mutant="109"><span class="bg-danger-light">`${node.id}${key}TextNode`</span></span><span class="bg-success-light">),
+    parent: node.id,
+    children: [],
+    [key]: str,
+    internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="110"><span class="badge badge-success">110</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="110">{}</span><span class="stryker-original-code" data-mutant="110"><span class="bg-success-light">{
+      type: _.camelCase(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="111"><span class="badge badge-success">111</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="111">&quot;&quot;</span><span class="stryker-original-code" data-mutant="111"><span class="bg-success-light">`${node.internal.type} ${key} TextNode`</span></span><span class="bg-success-light">),
+      mediaType: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="112"><span class="badge badge-success">112</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="112">&quot;&quot;</span><span class="stryker-original-code" data-mutant="112"><span class="bg-success-light">`text/markdown`</span></span><span class="bg-success-light">,
+      content: str,
+      contentDigest: digest(str),
+    }</span></span><span class="bg-success-light">,
+  }</span></span><span class="bg-success-light">
+
+  node.children = node.children.concat(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="113"><span class="badge badge-success">113</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="113">[]</span><span class="stryker-original-code" data-mutant="113"><span class="bg-success-light">[textNode.id]</span></span><span class="bg-success-light">)
+
+  return textNode
+}</span></span><span class="bg-null">
+
+function prepareStructuredTextNode(node, key, content, createNodeId) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="114"><span class="badge badge-danger">114</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="114">{}</span><span class="stryker-original-code" data-mutant="114"><span class="bg-danger-light">{
+  const str = stringify(content)
+  const structuredTextNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="115"><span class="badge badge-danger">115</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="115">{}</span><span class="stryker-original-code" data-mutant="115"><span class="bg-danger-light">{
+    ...content,
+    id: createNodeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="116"><span class="badge badge-danger">116</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="116">&quot;&quot;</span><span class="stryker-original-code" data-mutant="116"><span class="bg-danger-light">`${node.id}${key}RichTextNode`</span></span><span class="bg-danger-light">),
+    parent: node.id,
+    children: [],
+    [key]: str,
+    internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="117"><span class="badge badge-danger">117</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="117">{}</span><span class="stryker-original-code" data-mutant="117"><span class="bg-danger-light">{
+      type: _.camelCase(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="118"><span class="badge badge-danger">118</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="118">&quot;&quot;</span><span class="stryker-original-code" data-mutant="118"><span class="bg-danger-light">`${node.internal.type} ${key} RichTextNode`</span></span><span class="bg-danger-light">),
+      mediaType: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="119"><span class="badge badge-danger">119</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="119">&quot;&quot;</span><span class="stryker-original-code" data-mutant="119"><span class="bg-danger-light">`text/richtext`</span></span><span class="bg-danger-light">,
+      content: str,
+      contentDigest: digest(str),
+    }</span></span><span class="bg-danger-light">,
+  }</span></span><span class="bg-danger-light">
+
+  node.children = node.children.concat(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="120"><span class="badge badge-danger">120</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="120">[]</span><span class="stryker-original-code" data-mutant="120"><span class="bg-danger-light">[structuredTextNode.id]</span></span><span class="bg-danger-light">)
+
+  return structuredTextNode
+}</span></span><span class="bg-null">
+function prepareJSONNode(node, key, content, createNodeId, i = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="121"><span class="badge badge-danger">121</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="121">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="121"><span class="bg-danger-light">``</span></span><span class="bg-null">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="122"><span class="badge badge-success">122</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="122">{}</span><span class="stryker-original-code" data-mutant="122"><span class="bg-success-light">{
+  const str = JSON.stringify(content)
+  const JSONNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="123"><span class="badge badge-success">123</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="123">{}</span><span class="stryker-original-code" data-mutant="123"><span class="bg-success-light">{
+    ...(_.isPlainObject(content) ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="124"><span class="badge badge-success">124</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="124">{}</span><span class="stryker-original-code" data-mutant="124"><span class="bg-success-light">{ ...content }</span></span><span class="bg-success-light"> : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="125"><span class="badge badge-danger">125</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="125">{}</span><span class="stryker-original-code" data-mutant="125"><span class="bg-danger-light">{ content: content }</span></span><span class="bg-success-light">),
+    id: createNodeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="126"><span class="badge badge-danger">126</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="126">&quot;&quot;</span><span class="stryker-original-code" data-mutant="126"><span class="bg-danger-light">`${node.id}${key}${i}JSONNode`</span></span><span class="bg-success-light">),
+    parent: node.id,
+    children: [],
+    internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="127"><span class="badge badge-success">127</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="127">{}</span><span class="stryker-original-code" data-mutant="127"><span class="bg-success-light">{
+      type: _.camelCase(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="128"><span class="badge badge-success">128</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="128">&quot;&quot;</span><span class="stryker-original-code" data-mutant="128"><span class="bg-success-light">`${node.internal.type} ${key} JSONNode`</span></span><span class="bg-success-light">),
+      mediaType: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="129"><span class="badge badge-success">129</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="129">&quot;&quot;</span><span class="stryker-original-code" data-mutant="129"><span class="bg-success-light">`application/json`</span></span><span class="bg-success-light">,
+      content: str,
+      contentDigest: digest(str),
+    }</span></span><span class="bg-success-light">,
+  }</span></span><span class="bg-success-light">
+
+  node.children = node.children.concat(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="130"><span class="badge badge-success">130</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="130">[]</span><span class="stryker-original-code" data-mutant="130"><span class="bg-success-light">[JSONNode.id]</span></span><span class="bg-success-light">)
+
+  return JSONNode
+}</span></span><span class="bg-null">
+
+exports.createContentTypeNodes = ({
+  contentTypeItem,
+  restrictedNodeFields,
+  conflictFieldPrefix,
+  entries,
+  createNode,
+  createNodeId,
+  resolvable,
+  foreignReferenceMap,
+  defaultLocale,
+  locales,
+}) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="131"><span class="badge badge-success">131</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="131">{}</span><span class="stryker-original-code" data-mutant="131"><span class="bg-success-light">{
+  const contentTypeItemId = contentTypeItem.name
+  locales.forEach(locale =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="132"><span class="badge badge-success">132</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="132">{}</span><span class="stryker-original-code" data-mutant="132"><span class="bg-success-light">{
+    const localesFallback = buildFallbackChain(locales)
+    const mId = makeMakeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="133"><span class="badge badge-success">133</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="133">{}</span><span class="stryker-original-code" data-mutant="133"><span class="bg-success-light">{
+      currentLocale: locale.code,
+      defaultLocale,
+      createNodeId,
+    }</span></span><span class="bg-success-light">)
+    const getField = makeGetLocalizedField(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="134"><span class="badge badge-success">134</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="134">{}</span><span class="stryker-original-code" data-mutant="134"><span class="bg-success-light">{
+      locale,
+      localesFallback,
+    }</span></span><span class="bg-success-light">)
+
+    // Warn about any field conflicts
+    const conflictFields = []
+    contentTypeItem.fields.forEach(contentTypeItemField =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="135"><span class="badge badge-danger">135</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="135">{}</span><span class="stryker-original-code" data-mutant="135"><span class="bg-danger-light">{
+      const fieldName = contentTypeItemField.id
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="136"><span class="badge badge-danger">136</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="136">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="137"><span class="badge badge-success">137</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="137">true</span><span class="stryker-original-code" data-mutant="136"><span class="stryker-original-code" data-mutant="137"><span class="bg-danger-light">restrictedNodeFields.includes(fieldName)</span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="138"><span class="badge badge-danger">138</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="138">{}</span><span class="stryker-original-code" data-mutant="138"><span class="bg-danger-light">{
+        console.log(
+          </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="139"><span class="badge badge-danger">139</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="139">&quot;&quot;</span><span class="stryker-original-code" data-mutant="139"><span class="bg-danger-light">`Restricted field found for ContentType ${contentTypeItemId} and field ${fieldName}. Prefixing with ${conflictFieldPrefix}.`</span></span><span class="bg-danger-light">
+        )
+        conflictFields.push(fieldName)
+      }</span></span><span class="bg-danger-light">
+    }</span></span><span class="bg-success-light">)
+
+    const childrenNodes = []
+
+    // First create nodes for each of the entries of that content type
+    const entryNodes = entries.map(entryItem =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="140"><span class="badge badge-success">140</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="140">{}</span><span class="stryker-original-code" data-mutant="140"><span class="bg-success-light">{
+      // Get localized fields.
+      const entryItemFields = _.mapValues(entryItem.fields, (v, k) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="141"><span class="badge badge-success">141</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="141">{}</span><span class="stryker-original-code" data-mutant="141"><span class="bg-success-light">{
+        const fieldProps = contentTypeItem.fields.find(field =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="142"><span class="badge badge-success">142</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="142">field.id !== k</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="143"><span class="badge badge-success">143</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="143">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="144"><span class="badge badge-success">144</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="144">false</span><span class="stryker-original-code" data-mutant="142"><span class="stryker-original-code" data-mutant="143"><span class="stryker-original-code" data-mutant="144"><span class="bg-success-light">field.id === k</span></span></span></span><span class="bg-success-light">)
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="145"><span class="badge badge-success">145</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="145">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="146"><span class="badge badge-danger">146</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="146">true</span><span class="stryker-original-code" data-mutant="145"><span class="stryker-original-code" data-mutant="146"><span class="bg-danger-light">fieldProps.localized</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="147"><span class="badge badge-success">147</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="147">{}</span><span class="stryker-original-code" data-mutant="147"><span class="bg-success-light">{
+          return getField(v)
+        }</span></span><span class="bg-success-light">
+        return v[defaultLocale]
+      }</span></span><span class="bg-success-light">)
+
+      // Prefix any conflicting fields
+      // https://github.com/gatsbyjs/gatsby/pull/1084#pullrequestreview-41662888
+      conflictFields.forEach(conflictField =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="148"><span class="badge badge-danger">148</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="148">{}</span><span class="stryker-original-code" data-mutant="148"><span class="bg-danger-light">{
+        entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="149"><span class="badge badge-danger">149</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="149">&quot;&quot;</span><span class="stryker-original-code" data-mutant="149"><span class="bg-danger-light">`${conflictFieldPrefix}${conflictField}`</span></span><span class="bg-danger-light">] =
+          entryItemFields[conflictField]
+        delete entryItemFields[conflictField]
+      }</span></span><span class="bg-success-light">)
+
+      // Add linkages to other nodes based on foreign references
+      Object.keys(entryItemFields).forEach(entryItemFieldKey =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="150"><span class="badge badge-success">150</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="150">{}</span><span class="stryker-original-code" data-mutant="150"><span class="bg-success-light">{
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="151"><span class="badge badge-danger">151</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="151">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="152"><span class="badge badge-success">152</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="152">false</span><span class="stryker-original-code" data-mutant="151"><span class="stryker-original-code" data-mutant="152"><span class="bg-danger-light">entryItemFields[entryItemFieldKey]</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="153"><span class="badge badge-success">153</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="153">{}</span><span class="stryker-original-code" data-mutant="153"><span class="bg-success-light">{
+          const entryItemFieldValue = entryItemFields[entryItemFieldKey]
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="154"><span class="badge badge-success">154</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="154">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="155"><span class="badge badge-success">155</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="155">true</span><span class="stryker-original-code" data-mutant="154"><span class="stryker-original-code" data-mutant="155"><span class="bg-success-light">Array.isArray(entryItemFieldValue)</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="156"><span class="badge badge-success">156</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="156">{}</span><span class="stryker-original-code" data-mutant="156"><span class="bg-success-light">{
+            if (
+              </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="157"><span class="badge badge-success">157</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="157">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="158"><span class="badge badge-success">158</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="158">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="159"><span class="badge badge-success">159</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="159">entryItemFieldValue[0] &amp;&amp; entryItemFieldValue[0].sys &amp;&amp; entryItemFieldValue[0].sys.type || entryItemFieldValue[0].sys.id</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="160"><span class="badge badge-success">160</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="160">entryItemFieldValue[0] &amp;&amp; entryItemFieldValue[0].sys || entryItemFieldValue[0].sys.type</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="161"><span class="badge badge-success">161</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="161">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="162"><span class="badge badge-success">162</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="162">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="163"><span class="badge badge-success">163</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="163">entryItemFieldValue[0] || entryItemFieldValue[0].sys</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="164"><span class="badge badge-success">164</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="164">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="165"><span class="badge badge-success">165</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="165">false</span><span class="stryker-original-code" data-mutant="157"><span class="stryker-original-code" data-mutant="158"><span class="stryker-original-code" data-mutant="159"><span class="stryker-original-code" data-mutant="160"><span class="stryker-original-code" data-mutant="161"><span class="stryker-original-code" data-mutant="162"><span class="stryker-original-code" data-mutant="163"><span class="stryker-original-code" data-mutant="164"><span class="stryker-original-code" data-mutant="165"><span class="bg-success-light">entryItemFieldValue[0] &amp;&amp;
+              entryItemFieldValue[0].sys</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+              entryItemFieldValue[0].sys.type</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+              entryItemFieldValue[0].sys.id</span></span></span></span><span class="bg-success-light">
+            ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="166"><span class="badge badge-success">166</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="166">{}</span><span class="stryker-original-code" data-mutant="166"><span class="bg-success-light">{
+              // Check if there are any values in entryItemFieldValue to prevent
+              // creating an empty node field in case when original key field value
+              // is empty due to links to missing entities
+              const resolvableEntryItemFieldValue = entryItemFieldValue
+                .filter(function(v) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="167"><span class="badge badge-success">167</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="167">{}</span><span class="stryker-original-code" data-mutant="167"><span class="bg-success-light">{
+                  return resolvable.has(v.sys.id)
+                }</span></span><span class="bg-success-light">)
+                .map(function(v) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="168"><span class="badge badge-success">168</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="168">{}</span><span class="stryker-original-code" data-mutant="168"><span class="bg-success-light">{
+                  return mId(v.sys.id)
+                }</span></span><span class="bg-success-light">)
+              if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="169"><span class="badge badge-success">169</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="169">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="170"><span class="badge badge-success">170</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="170">resolvableEntryItemFieldValue.length === 0</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="171"><span class="badge badge-danger">171</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="171">true</span><span class="stryker-original-code" data-mutant="169"><span class="stryker-original-code" data-mutant="170"><span class="stryker-original-code" data-mutant="171"><span class="bg-danger-light">resolvableEntryItemFieldValue.length !== 0</span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="172"><span class="badge badge-success">172</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="172">{}</span><span class="stryker-original-code" data-mutant="172"><span class="bg-success-light">{
+                entryItemFields[
+                  </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="173"><span class="badge badge-success">173</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="173">&quot;&quot;</span><span class="stryker-original-code" data-mutant="173"><span class="bg-success-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-success-light">
+                ] = resolvableEntryItemFieldValue
+              }</span></span><span class="bg-success-light">
+
+              delete entryItemFields[entryItemFieldKey]
+            }</span></span><span class="bg-success-light">
+          }</span></span><span class="bg-success-light"> else if (
+            </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="174"><span class="badge badge-success">174</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="174">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="175"><span class="badge badge-success">175</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="175">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="176"><span class="badge badge-success">176</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="176">entryItemFieldValue &amp;&amp; entryItemFieldValue.sys &amp;&amp; entryItemFieldValue.sys.type || entryItemFieldValue.sys.id</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="177"><span class="badge badge-success">177</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="177">entryItemFieldValue &amp;&amp; entryItemFieldValue.sys || entryItemFieldValue.sys.type</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="178"><span class="badge badge-success">178</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="178">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="179"><span class="badge badge-success">179</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="179">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="180"><span class="badge badge-success">180</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="180">entryItemFieldValue || entryItemFieldValue.sys</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="181"><span class="badge badge-success">181</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="181">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="182"><span class="badge badge-success">182</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="182">false</span><span class="stryker-original-code" data-mutant="174"><span class="stryker-original-code" data-mutant="175"><span class="stryker-original-code" data-mutant="176"><span class="stryker-original-code" data-mutant="177"><span class="stryker-original-code" data-mutant="178"><span class="stryker-original-code" data-mutant="179"><span class="stryker-original-code" data-mutant="180"><span class="stryker-original-code" data-mutant="181"><span class="stryker-original-code" data-mutant="182"><span class="bg-success-light">entryItemFieldValue &amp;&amp;
+            entryItemFieldValue.sys</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+            entryItemFieldValue.sys.type</span></span></span></span><span class="bg-success-light"> &amp;&amp;
+            entryItemFieldValue.sys.id</span></span></span></span><span class="bg-success-light">
+          ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="183"><span class="badge badge-success">183</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="183">{}</span><span class="stryker-original-code" data-mutant="183"><span class="bg-success-light">{
+            if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="184"><span class="badge badge-success">184</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="184">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="185"><span class="badge badge-danger">185</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="185">true</span><span class="stryker-original-code" data-mutant="184"><span class="stryker-original-code" data-mutant="185"><span class="bg-danger-light">resolvable.has(entryItemFieldValue.sys.id)</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="186"><span class="badge badge-success">186</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="186">{}</span><span class="stryker-original-code" data-mutant="186"><span class="bg-success-light">{
+              entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="187"><span class="badge badge-success">187</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="187">&quot;&quot;</span><span class="stryker-original-code" data-mutant="187"><span class="bg-success-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-success-light">] = mId(
+                entryItemFieldValue.sys.id
+              )
+            }</span></span><span class="bg-success-light">
+            delete entryItemFields[entryItemFieldKey]
+          }</span></span><span class="bg-success-light">
+        }</span></span><span class="bg-success-light">
+      }</span></span><span class="bg-success-light">)
+
+      // Add reverse linkages if there are any for this node
+      const foreignReferences = foreignReferenceMap[entryItem.sys.id]
+      if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="188"><span class="badge badge-success">188</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="188">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="189"><span class="badge badge-success">189</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="189">true</span><span class="stryker-original-code" data-mutant="188"><span class="stryker-original-code" data-mutant="189"><span class="bg-success-light">foreignReferences</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="190"><span class="badge badge-success">190</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="190">{}</span><span class="stryker-original-code" data-mutant="190"><span class="bg-success-light">{
+        foreignReferences.forEach(foreignReference =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="191"><span class="badge badge-success">191</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="191">{}</span><span class="stryker-original-code" data-mutant="191"><span class="bg-success-light">{
+          const existingReference = entryItemFields[foreignReference.name]
+          if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="192"><span class="badge badge-success">192</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="192">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="193"><span class="badge badge-success">193</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="193">true</span><span class="stryker-original-code" data-mutant="192"><span class="stryker-original-code" data-mutant="193"><span class="bg-success-light">existingReference</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="194"><span class="badge badge-success">194</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="194">{}</span><span class="stryker-original-code" data-mutant="194"><span class="bg-success-light">{
+            entryItemFields[foreignReference.name].push(
+              mId(foreignReference.id)
+            )
+          }</span></span><span class="bg-success-light"> else </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="195"><span class="badge badge-success">195</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="195">{}</span><span class="stryker-original-code" data-mutant="195"><span class="bg-success-light">{
+            // If there is one foreign reference, there can be many.
+            // Best to be safe and put it in an array to start with.
+            entryItemFields[foreignReference.name] = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="196"><span class="badge badge-success">196</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="196">[]</span><span class="stryker-original-code" data-mutant="196"><span class="bg-success-light">[mId(foreignReference.id)]</span></span><span class="bg-success-light">
+          }</span></span><span class="bg-success-light">
+        }</span></span><span class="bg-success-light">)
+      }</span></span><span class="bg-success-light">
+
+      let entryNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="197"><span class="badge badge-success">197</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="197">{}</span><span class="stryker-original-code" data-mutant="197"><span class="bg-success-light">{
+        id: mId(entryItem.sys.id),
+        contentful_id: entryItem.sys.contentful_id,
+        createdAt: entryItem.sys.createdAt,
+        updatedAt: entryItem.sys.updatedAt,
+        parent: contentTypeItemId,
+        children: [],
+        internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="198"><span class="badge badge-success">198</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="198">{}</span><span class="stryker-original-code" data-mutant="198"><span class="bg-success-light">{
+          type: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="199"><span class="badge badge-success">199</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="199">&quot;&quot;</span><span class="stryker-original-code" data-mutant="199"><span class="bg-success-light">`${makeTypeName(contentTypeItemId)}`</span></span><span class="bg-success-light">,
+        }</span></span><span class="bg-success-light">,
+      }</span></span><span class="bg-success-light">
+
+      // Use default locale field.
+      Object.keys(entryItemFields).forEach(entryItemFieldKey =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="200"><span class="badge badge-danger">200</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="200">{}</span><span class="stryker-original-code" data-mutant="200"><span class="bg-danger-light">{
+        // Ignore fields with &quot;___node&quot; as they&#039;re already handled
+        // and won&#039;t be a text field.
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="201"><span class="badge badge-danger">201</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="201">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="202"><span class="badge badge-danger">202</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="202">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="203"><span class="badge badge-danger">203</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="203">entryItemFieldKey.split(`___`).length &gt;= 1</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="204"><span class="badge badge-danger">204</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="204">entryItemFieldKey.split(`___`).length &lt;= 1</span><span class="stryker-original-code" data-mutant="201"><span class="stryker-original-code" data-mutant="202"><span class="stryker-original-code" data-mutant="203"><span class="stryker-original-code" data-mutant="204"><span class="bg-danger-light">entryItemFieldKey.split(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="205"><span class="badge badge-danger">205</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="205">&quot;&quot;</span><span class="stryker-original-code" data-mutant="205"><span class="bg-danger-light">`___`</span></span><span class="bg-danger-light">).length &gt; 1</span></span></span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="206"><span class="badge badge-danger">206</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="206">{}</span><span class="stryker-original-code" data-mutant="206"><span class="bg-danger-light">{
+          return
+        }</span></span><span class="bg-danger-light">
+      }</span></span><span class="bg-success-light">)
+
+      // Replace text fields with text nodes so we can process their markdown
+      // into HTML.
+      Object.keys(entryItemFields).forEach(entryItemFieldKey =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="207"><span class="badge badge-success">207</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="207">{}</span><span class="stryker-original-code" data-mutant="207"><span class="bg-success-light">{
+        // Ignore fields with &quot;___node&quot; as they&#039;re already handled
+        // and won&#039;t be a text field.
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="208"><span class="badge badge-success">208</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="208">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="209"><span class="badge badge-success">209</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="209">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="210"><span class="badge badge-success">210</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="210">entryItemFieldKey.split(`___`).length &gt;= 1</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="211"><span class="badge badge-success">211</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="211">entryItemFieldKey.split(`___`).length &lt;= 1</span><span class="stryker-original-code" data-mutant="208"><span class="stryker-original-code" data-mutant="209"><span class="stryker-original-code" data-mutant="210"><span class="stryker-original-code" data-mutant="211"><span class="bg-success-light">entryItemFieldKey.split(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="212"><span class="badge badge-success">212</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="212">&quot;&quot;</span><span class="stryker-original-code" data-mutant="212"><span class="bg-success-light">`___`</span></span><span class="bg-success-light">).length &gt; 1</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="213"><span class="badge badge-success">213</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="213">{}</span><span class="stryker-original-code" data-mutant="213"><span class="bg-success-light">{
+          return
+        }</span></span><span class="bg-success-light">
+
+        const fieldType = contentTypeItem.fields.find(
+          f =&gt;
+            </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="214"><span class="badge badge-success">214</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="214">(restrictedNodeFields.includes(f.id) ? `${conflictFieldPrefix}${f.id}` : f.id) !== entryItemFieldKey</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="215"><span class="badge badge-success">215</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="215">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="216"><span class="badge badge-success">216</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="216">true</span><span class="stryker-original-code" data-mutant="214"><span class="stryker-original-code" data-mutant="215"><span class="stryker-original-code" data-mutant="216"><span class="bg-success-light">(restrictedNodeFields.includes(f.id)
+              ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="217"><span class="badge badge-danger">217</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="217">&quot;&quot;</span><span class="stryker-original-code" data-mutant="217"><span class="bg-danger-light">`${conflictFieldPrefix}${f.id}`</span></span><span class="bg-success-light">
+              : f.id) === entryItemFieldKey</span></span></span></span><span class="bg-success-light">
+        ).type
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="218"><span class="badge badge-success">218</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="218">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="219"><span class="badge badge-success">219</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="219">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="220"><span class="badge badge-success">220</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="220">fieldType !== `Text`</span><span class="stryker-original-code" data-mutant="218"><span class="stryker-original-code" data-mutant="219"><span class="stryker-original-code" data-mutant="220"><span class="bg-success-light">fieldType === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="221"><span class="badge badge-success">221</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="221">&quot;&quot;</span><span class="stryker-original-code" data-mutant="221"><span class="bg-success-light">`Text`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="222"><span class="badge badge-success">222</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="222">{}</span><span class="stryker-original-code" data-mutant="222"><span class="bg-success-light">{
+          const textNode = prepareTextNode(
+            entryNode,
+            entryItemFieldKey,
+            entryItemFields[entryItemFieldKey],
+            createNodeId
+          )
+
+          childrenNodes.push(textNode)
+          entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="223"><span class="badge badge-success">223</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="223">&quot;&quot;</span><span class="stryker-original-code" data-mutant="223"><span class="bg-success-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-success-light">] = textNode.id
+
+          delete entryItemFields[entryItemFieldKey]
+        }</span></span><span class="bg-success-light"> else if (
+          </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="224"><span class="badge badge-danger">224</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="224">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="225"><span class="badge badge-success">225</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="225">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="226"><span class="badge badge-success">226</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="226">fieldType === `RichText` || _.isPlainObject(entryItemFields[entryItemFieldKey])</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="227"><span class="badge badge-success">227</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="227">fieldType !== `RichText`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="228"><span class="badge badge-danger">228</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="228">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="229"><span class="badge badge-success">229</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="229">true</span><span class="stryker-original-code" data-mutant="224"><span class="stryker-original-code" data-mutant="225"><span class="stryker-original-code" data-mutant="226"><span class="stryker-original-code" data-mutant="227"><span class="stryker-original-code" data-mutant="228"><span class="stryker-original-code" data-mutant="229"><span class="bg-danger-light">fieldType === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="230"><span class="badge badge-danger">230</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="230">&quot;&quot;</span><span class="stryker-original-code" data-mutant="230"><span class="bg-danger-light">`RichText`</span></span></span></span></span><span class="bg-danger-light"> &amp;&amp;
+          _.isPlainObject(entryItemFields[entryItemFieldKey])</span></span></span></span><span class="bg-success-light">
+        ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="231"><span class="badge badge-danger">231</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="231">{}</span><span class="stryker-original-code" data-mutant="231"><span class="bg-danger-light">{
+          const richTextNode = prepareStructuredTextNode(
+            entryNode,
+            entryItemFieldKey,
+            entryItemFields[entryItemFieldKey],
+            createNodeId
+          )
+
+          childrenNodes.push(richTextNode)
+          entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="232"><span class="badge badge-danger">232</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="232">&quot;&quot;</span><span class="stryker-original-code" data-mutant="232"><span class="bg-danger-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-danger-light">] = richTextNode.id
+
+          delete entryItemFields[entryItemFieldKey]
+        }</span></span><span class="bg-success-light"> else if (
+          </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="233"><span class="badge badge-success">233</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="233">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="234"><span class="badge badge-success">234</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="234">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="235"><span class="badge badge-danger">235</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="235">fieldType === `Object` || _.isPlainObject(entryItemFields[entryItemFieldKey])</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="236"><span class="badge badge-success">236</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="236">fieldType !== `Object`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="237"><span class="badge badge-success">237</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="237">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="238"><span class="badge badge-danger">238</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="238">true</span><span class="stryker-original-code" data-mutant="233"><span class="stryker-original-code" data-mutant="234"><span class="stryker-original-code" data-mutant="235"><span class="stryker-original-code" data-mutant="236"><span class="stryker-original-code" data-mutant="237"><span class="stryker-original-code" data-mutant="238"><span class="bg-danger-light">fieldType === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="239"><span class="badge badge-success">239</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="239">&quot;&quot;</span><span class="stryker-original-code" data-mutant="239"><span class="bg-danger-light">`Object`</span></span></span></span></span><span class="bg-danger-light"> &amp;&amp;
+          _.isPlainObject(entryItemFields[entryItemFieldKey])</span></span></span></span><span class="bg-success-light">
+        ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="240"><span class="badge badge-success">240</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="240">{}</span><span class="stryker-original-code" data-mutant="240"><span class="bg-success-light">{
+          const jsonNode = prepareJSONNode(
+            entryNode,
+            entryItemFieldKey,
+            entryItemFields[entryItemFieldKey],
+            createNodeId
+          )
+
+          childrenNodes.push(jsonNode)
+          entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="241"><span class="badge badge-success">241</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="241">&quot;&quot;</span><span class="stryker-original-code" data-mutant="241"><span class="bg-success-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-success-light">] = jsonNode.id
+
+          delete entryItemFields[entryItemFieldKey]
+        }</span></span><span class="bg-success-light"> else if (
+          </span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="242"><span class="badge badge-danger">242</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="242">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="243"><span class="badge badge-success">243</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="243">fieldType === `Object` || _.isArray(entryItemFields[entryItemFieldKey])</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="244"><span class="badge badge-success">244</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="244">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="245"><span class="badge badge-success">245</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="245">fieldType !== `Object`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="246"><span class="badge badge-success">246</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="246">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="247"><span class="badge badge-danger">247</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="247">false</span><span class="stryker-original-code" data-mutant="242"><span class="stryker-original-code" data-mutant="243"><span class="stryker-original-code" data-mutant="244"><span class="stryker-original-code" data-mutant="245"><span class="stryker-original-code" data-mutant="246"><span class="stryker-original-code" data-mutant="247"><span class="bg-danger-light">fieldType === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="248"><span class="badge badge-danger">248</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="248">&quot;&quot;</span><span class="stryker-original-code" data-mutant="248"><span class="bg-danger-light">`Object`</span></span></span></span></span><span class="bg-danger-light"> &amp;&amp;
+          _.isArray(entryItemFields[entryItemFieldKey])</span></span></span></span><span class="bg-success-light">
+        ) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="249"><span class="badge badge-danger">249</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="249">{}</span><span class="stryker-original-code" data-mutant="249"><span class="bg-danger-light">{
+          entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="250"><span class="badge badge-danger">250</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="250">&quot;&quot;</span><span class="stryker-original-code" data-mutant="250"><span class="bg-danger-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-danger-light">] = []
+
+          entryItemFields[entryItemFieldKey].forEach((obj, i) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="251"><span class="badge badge-danger">251</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="251">{}</span><span class="stryker-original-code" data-mutant="251"><span class="bg-danger-light">{
+            const jsonNode = prepareJSONNode(
+              entryNode,
+              entryItemFieldKey,
+              obj,
+              createNodeId,
+              i
+            )
+
+            childrenNodes.push(jsonNode)
+            entryItemFields[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="252"><span class="badge badge-danger">252</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="252">&quot;&quot;</span><span class="stryker-original-code" data-mutant="252"><span class="bg-danger-light">`${entryItemFieldKey}___NODE`</span></span><span class="bg-danger-light">].push(jsonNode.id)
+          }</span></span><span class="bg-danger-light">)
+
+          delete entryItemFields[entryItemFieldKey]
+        }</span></span><span class="bg-success-light">
+      }</span></span><span class="bg-success-light">)
+
+      entryNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="253"><span class="badge badge-success">253</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="253">{}</span><span class="stryker-original-code" data-mutant="253"><span class="bg-success-light">{ ...entryItemFields, ...entryNode, node_locale: locale.code }</span></span><span class="bg-success-light">
+
+      // Get content digest of node.
+      const contentDigest = digest(stringify(entryNode))
+
+      entryNode.internal.contentDigest = contentDigest
+
+      return entryNode
+    }</span></span><span class="bg-success-light">)
+
+    // Create a node for each content type
+    const contentTypeNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="254"><span class="badge badge-success">254</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="254">{}</span><span class="stryker-original-code" data-mutant="254"><span class="bg-success-light">{
+      id: createNodeId(contentTypeItemId),
+      parent: null,
+      children: [],
+      name: contentTypeItem.name,
+      displayField: contentTypeItem.displayField,
+      description: contentTypeItem.description,
+      internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="255"><span class="badge badge-success">255</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="255">{}</span><span class="stryker-original-code" data-mutant="255"><span class="bg-success-light">{
+        type: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="256"><span class="badge badge-success">256</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="256">&quot;&quot;</span><span class="stryker-original-code" data-mutant="256"><span class="bg-success-light">`${makeTypeName(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="257"><span class="badge badge-success">257</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="257">&quot;&quot;</span><span class="stryker-original-code" data-mutant="257"><span class="bg-success-light">`ContentType`</span></span><span class="bg-success-light">)}`</span></span><span class="bg-success-light">,
+      }</span></span><span class="bg-success-light">,
+    }</span></span><span class="bg-success-light">
+
+    // Get content digest of node.
+    const contentDigest = digest(stringify(contentTypeNode))
+
+    contentTypeNode.internal.contentDigest = contentDigest
+
+    createNode(contentTypeNode)
+    entryNodes.forEach(entryNode =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="258"><span class="badge badge-success">258</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="258">{}</span><span class="stryker-original-code" data-mutant="258"><span class="bg-success-light">{
+      createNode(entryNode)
+    }</span></span><span class="bg-success-light">)
+    childrenNodes.forEach(entryNode =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="259"><span class="badge badge-success">259</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="259">{}</span><span class="stryker-original-code" data-mutant="259"><span class="bg-success-light">{
+      createNode(entryNode)
+    }</span></span><span class="bg-success-light">)
+  }</span></span><span class="bg-success-light">)
+}</span></span><span class="bg-null">
+
+exports.createAssetNodes = ({
+  assetItem,
+  createNode,
+  createNodeId,
+  defaultLocale,
+  locales,
+}) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="260"><span class="badge badge-success">260</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="260">{}</span><span class="stryker-original-code" data-mutant="260"><span class="bg-success-light">{
+  locales.forEach(locale =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="261"><span class="badge badge-success">261</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="261">{}</span><span class="stryker-original-code" data-mutant="261"><span class="bg-success-light">{
+    const localesFallback = buildFallbackChain(locales)
+    const mId = makeMakeId(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="262"><span class="badge badge-success">262</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="262">{}</span><span class="stryker-original-code" data-mutant="262"><span class="bg-success-light">{
+      currentLocale: locale.code,
+      defaultLocale,
+      createNodeId,
+    }</span></span><span class="bg-success-light">)
+    const getField = makeGetLocalizedField(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="263"><span class="badge badge-success">263</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="263">{}</span><span class="stryker-original-code" data-mutant="263"><span class="bg-success-light">{
+      locale,
+      localesFallback,
+    }</span></span><span class="bg-success-light">)
+
+    const localizedAsset = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="264"><span class="badge badge-success">264</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="264">{}</span><span class="stryker-original-code" data-mutant="264"><span class="bg-success-light">{ ...assetItem }</span></span><span class="bg-success-light">
+    // Create a node for each asset. They may be referenced by Entries
+    //
+    // Get localized fields.
+    localizedAsset.fields = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="265"><span class="badge badge-success">265</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="265">{}</span><span class="stryker-original-code" data-mutant="265"><span class="bg-success-light">{
+      file: localizedAsset.fields.file
+        ? getField(localizedAsset.fields.file)
+        : null,
+      title: localizedAsset.fields.title
+        ? getField(localizedAsset.fields.title)
+        : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="266"><span class="badge badge-danger">266</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="266">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="266"><span class="bg-danger-light">``</span></span><span class="bg-success-light">,
+      description: localizedAsset.fields.description
+        ? getField(localizedAsset.fields.description)
+        : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="267"><span class="badge badge-danger">267</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="267">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="267"><span class="bg-danger-light">``</span></span><span class="bg-success-light">,
+    }</span></span><span class="bg-success-light">
+    const assetNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="268"><span class="badge badge-success">268</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="268">{}</span><span class="stryker-original-code" data-mutant="268"><span class="bg-success-light">{
+      contentful_id: localizedAsset.sys.contentful_id,
+      id: mId(localizedAsset.sys.id),
+      parent: null,
+      children: [],
+      ...localizedAsset.fields,
+      node_locale: locale.code,
+      internal: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="269"><span class="badge badge-success">269</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="269">{}</span><span class="stryker-original-code" data-mutant="269"><span class="bg-success-light">{
+        type: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="270"><span class="badge badge-success">270</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="270">&quot;&quot;</span><span class="stryker-original-code" data-mutant="270"><span class="bg-success-light">`${makeTypeName(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="271"><span class="badge badge-success">271</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="271">&quot;&quot;</span><span class="stryker-original-code" data-mutant="271"><span class="bg-success-light">`Asset`</span></span><span class="bg-success-light">)}`</span></span><span class="bg-success-light">,
+      }</span></span><span class="bg-success-light">,
+    }</span></span><span class="bg-success-light">
+
+    // Get content digest of node.
+    const contentDigest = digest(stringify(assetNode))
+
+    assetNode.internal.contentDigest = contentDigest
+
+    createNode(assetNode)
+  }</span></span><span class="bg-success-light">)
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>0
+:
+18</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>1</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>1
+:
+23</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>2</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>2
+:
+26</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>3</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>3
+:
+24</td>
+<td><code>`    -   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>4</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>7
+:
+16</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>5</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>9
+:
+12</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>6</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>10
+:
+19</td>
+<td><code>`          `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>7</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>11
+:
+54</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>8</th>
+<td>Block</td>
+<td>Killed</td>
+<td>13
+:
+66</td>
+<td><code>{
+   ...  }
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>9</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>14
+:
+6</td>
+<td><code>! .  ...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>10</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>14
+:
+6</td>
+<td><code>! .  ...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>14
+:
+6</td>
+<td><code>! .  ...   ])</code></td>
+<td><code>.    ...   ])</code></td></tr>
+<tr><th>12</th>
+<td>Block</td>
+<td>Killed</td>
+<td>14
+:
+42</td>
+<td><code>{
+   ...]
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>13</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>17
+:
+4</td>
+<td><code>! .  ...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>14</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>17
+:
+4</td>
+<td><code>! .  ...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>15</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>17
+:
+4</td>
+<td><code>! .  ...   ])</code></td>
+<td><code>! .  ...   ])</code></td></tr>
+<tr><th>16</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>17
+:
+4</td>
+<td><code>! .  ...    )</code></td>
+<td><code>.    ...    )</code></td></tr>
+<tr><th>17</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>18
+:
+4</td>
+<td><code>! .  ...   ])</code></td>
+<td><code>.    ...   ])</code></td></tr>
+<tr><th>18</th>
+<td>Block</td>
+<td>Killed</td>
+<td>19
+:
+4</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>19</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>20
+:
+29</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>20</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>22
+:
+14</td>
+<td><code>{    ...  ] }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>21</th>
+<td>Block</td>
+<td>Killed</td>
+<td>25
+:
+9</td>
+<td><code>{
+   ... 
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>22</th>
+<td>Block</td>
+<td>Killed</td>
+<td>29
+:
+38</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>23</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>38
+:
+20</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>24</th>
+<td>Block</td>
+<td>Killed</td>
+<td>45
+:
+20</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>25</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>46
+:
+6</td>
+<td><code>! .        (  )</code></td>
+<td><code></code></td></tr>
+<tr><th>26</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>46
+:
+6</td>
+<td><code>! .        (  )</code></td>
+<td><code></code></td></tr>
+<tr><th>27</th>
+<td>PrefixUnaryExpression</td>
+<td>Survived</td>
+<td>46
+:
+6</td>
+<td><code>! .        (  )</code></td>
+<td><code>.        (  )</code></td></tr>
+<tr><th>28</th>
+<td>Block</td>
+<td>Survived</td>
+<td>46
+:
+23</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>29</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>49
+:
+6</td>
+<td><code>!    ...,  ))</code></td>
+<td><code></code></td></tr>
+<tr><th>30</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>49
+:
+6</td>
+<td><code>!    ...,  ))</code></td>
+<td><code></code></td></tr>
+<tr><th>31</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>49
+:
+6</td>
+<td><code>!    ...,  ))</code></td>
+<td><code>(  . ...,  ))</code></td></tr>
+<tr><th>32</th>
+<td>Block</td>
+<td>Killed</td>
+<td>49
+:
+30</td>
+<td><code>{
+   ...`
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>33</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>50
+:
+11</td>
+<td><code>` ${  }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>34</th>
+<td>Block</td>
+<td>Killed</td>
+<td>56
+:
+27</td>
+<td><code>{
+   ...  }
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>35</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>57
+:
+41</td>
+<td><code>=== `  `</code></td>
+<td><code>!== `  `</code></td></tr>
+<tr><th>36</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>57
+:
+41</td>
+<td><code>=== `  `</code></td>
+<td><code></code></td></tr>
+<tr><th>37</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>57
+:
+41</td>
+<td><code>=== `  `</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>57
+:
+47</td>
+<td><code>`  `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>39</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>59
+:
+9</td>
+<td><code>{
+   ...,
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>40</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>61
+:
+9</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>41</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>69
+:
+2</td>
+<td><code>===</code></td>
+<td><code>!==</code></td></tr>
+<tr><th>42</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>69
+:
+2</td>
+<td><code>===</code></td>
+<td><code></code></td></tr>
+<tr><th>43</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>69
+:
+2</td>
+<td><code>===</code></td>
+<td><code></code></td></tr>
+<tr><th>44</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>69
+:
+41</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>45</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>74
+:
+22</td>
+<td><code>{   ,...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>46</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>79
+:
+15</td>
+<td><code>.   .....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>47</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>79
+:
+15</td>
+<td><code>.   .....   .</code></td>
+<td><code>.   .....   .</code></td></tr>
+<tr><th>48</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>79
+:
+15</td>
+<td><code>.   .....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>49</th>
+<td>Block</td>
+<td>Killed</td>
+<td>89
+:
+6</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>50</th>
+<td>Block</td>
+<td>Survived</td>
+<td>91
+:
+29</td>
+<td><code>{
+   ...}
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>51</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>92
+:
+8</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>52</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>92
+:
+8</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>53</th>
+<td>Block</td>
+<td>Survived</td>
+<td>92
+:
+25</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>54</th>
+<td>Block</td>
+<td>Killed</td>
+<td>102
+:
+31</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>55</th>
+<td>Block</td>
+<td>Killed</td>
+<td>103
+:
+29</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>56</th>
+<td>Block</td>
+<td>Killed</td>
+<td>118
+:
+6</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>57</th>
+<td>Block</td>
+<td>Killed</td>
+<td>120
+:
+51</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>58</th>
+<td>Block</td>
+<td>Killed</td>
+<td>122
+:
+38</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>59</th>
+<td>Block</td>
+<td>Killed</td>
+<td>124
+:
+64</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>60</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>125
+:
+12</td>
+<td><code>[    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>61</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>125
+:
+12</td>
+<td><code>[    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>62</th>
+<td>Block</td>
+<td>Killed</td>
+<td>125
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>63</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>130
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>64</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>130
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>65</th>
+<td>Block</td>
+<td>Killed</td>
+<td>130
+:
+50</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>66</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>67</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code>[ ] &....   .</code></td></tr>
+<tr><th>68</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>69</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code>[ ] &....   .</code></td></tr>
+<tr><th>70</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>71</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>72</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code></code></td></tr>
+<tr><th>73</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code>[ ] |... [ ].</code></td></tr>
+<tr><th>74</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>132
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code></code></td></tr>
+<tr><th>75</th>
+<td>Block</td>
+<td>Killed</td>
+<td>136
+:
+14</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>76</th>
+<td>Block</td>
+<td>Killed</td>
+<td>137
+:
+47</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>77</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>139
+:
+20</td>
+<td><code>!    ... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>78</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>139
+:
+20</td>
+<td><code>!    ... .  )</code></td>
+<td><code>.   ( .   .  )</code></td></tr>
+<tr><th>79</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>139
+:
+20</td>
+<td><code>!    ... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>80</th>
+<td>Block</td>
+<td>Survived</td>
+<td>139
+:
+47</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>81</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>143
+:
+20</td>
+<td><code>!    ... .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>82</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>143
+:
+20</td>
+<td><code>!    ... .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>83</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>143
+:
+20</td>
+<td><code>!    ... .  ]</code></td>
+<td><code>[ .   .  ]</code></td></tr>
+<tr><th>84</th>
+<td>Block</td>
+<td>Killed</td>
+<td>143
+:
+52</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>85</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>146
+:
+51</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>86</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>147
+:
+24</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>87</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>88</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>89</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ... .  )</code></td>
+<td><code>&&   ... .  )</code></td></tr>
+<tr><th>90</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code>&&   ....   .</code></td></tr>
+<tr><th>91</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>92</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>93</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>94</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>95</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code>&&   ....   .</code></td></tr>
+<tr><th>96</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>97</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code>||   ...    .</code></td></tr>
+<tr><th>98</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>153
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>99</th>
+<td>Block</td>
+<td>Killed</td>
+<td>158
+:
+12</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>100</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>159
+:
+16</td>
+<td><code>!    ... .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>101</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>159
+:
+16</td>
+<td><code>!    ... .  ]</code></td>
+<td><code></code></td></tr>
+<tr><th>102</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>159
+:
+16</td>
+<td><code>!    ... .  ]</code></td>
+<td><code>[    ... .  ]</code></td></tr>
+<tr><th>103</th>
+<td>Block</td>
+<td>Killed</td>
+<td>159
+:
+66</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>104</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>162
+:
+65</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>105</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>163
+:
+20</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>106</th>
+<td>Block</td>
+<td>Killed</td>
+<td>175
+:
+56</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>107</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>176
+:
+40</td>
+<td><code>` `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>108</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>177
+:
+19</td>
+<td><code>{
+   ...,
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>109</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>178
+:
+21</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>110</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>182
+:
+14</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>111</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>183
+:
+24</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>112</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>184
+:
+17</td>
+<td><code>`    /        `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>113</th>
+<td>ArrayLiteral</td>
+<td>Killed</td>
+<td>190
+:
+39</td>
+<td><code>[        .  ]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>114</th>
+<td>Block</td>
+<td>Survived</td>
+<td>195
+:
+69</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>115</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>197
+:
+29</td>
+<td><code>{
+   ...,
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>116</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>199
+:
+21</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>117</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>203
+:
+14</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>118</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>204
+:
+24</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>119</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>205
+:
+17</td>
+<td><code>`    /        `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>120</th>
+<td>ArrayLiteral</td>
+<td>Survived</td>
+<td>211
+:
+39</td>
+<td><code>[    ... .  ]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>121</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>215
+:
+63</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>122</th>
+<td>Block</td>
+<td>Killed</td>
+<td>215
+:
+67</td>
+<td><code>{
+   ...   
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>123</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>217
+:
+19</td>
+<td><code>{
+   ...,
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>124</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>218
+:
+35</td>
+<td><code>{ ...        }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>125</th>
+<td>ObjectLiteral</td>
+<td>Survived</td>
+<td>218
+:
+52</td>
+<td><code>{    ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>126</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>219
+:
+21</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>127</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>222
+:
+14</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>128</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>223
+:
+24</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>129</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>224
+:
+17</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>130</th>
+<td>ArrayLiteral</td>
+<td>Killed</td>
+<td>230
+:
+39</td>
+<td><code>[        .  ]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>131</th>
+<td>Block</td>
+<td>Killed</td>
+<td>246
+:
+6</td>
+<td><code>{
+   ... })
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>132</th>
+<td>Block</td>
+<td>Killed</td>
+<td>248
+:
+28</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>133</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>250
+:
+27</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>134</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>255
+:
+43</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>135</th>
+<td>Block</td>
+<td>Survived</td>
+<td>262
+:
+59</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>136</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>264
+:
+10</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>137</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>264
+:
+10</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>138</th>
+<td>Block</td>
+<td>Survived</td>
+<td>264
+:
+52</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>139</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>266
+:
+10</td>
+<td><code>`    ...  }.`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>140</th>
+<td>Block</td>
+<td>Killed</td>
+<td>275
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>141</th>
+<td>Block</td>
+<td>Killed</td>
+<td>277
+:
+70</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>142</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>278
+:
+64</td>
+<td><code>.   ===</code></td>
+<td><code>.   !==</code></td></tr>
+<tr><th>143</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>278
+:
+64</td>
+<td><code>.   ===</code></td>
+<td><code></code></td></tr>
+<tr><th>144</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>278
+:
+64</td>
+<td><code>.   ===</code></td>
+<td><code></code></td></tr>
+<tr><th>145</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>279
+:
+12</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>146</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>279
+:
+12</td>
+<td><code>.</code></td>
+<td><code></code></td></tr>
+<tr><th>147</th>
+<td>Block</td>
+<td>Killed</td>
+<td>279
+:
+34</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>148</th>
+<td>Block</td>
+<td>Survived</td>
+<td>287
+:
+46</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>149</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>288
+:
+24</td>
+<td><code>`${  ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>150</th>
+<td>Block</td>
+<td>Killed</td>
+<td>294
+:
+64</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>151</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>295
+:
+12</td>
+<td><code>[    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>152</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>295
+:
+12</td>
+<td><code>[    ...    ]</code></td>
+<td><code></code></td></tr>
+<tr><th>153</th>
+<td>Block</td>
+<td>Killed</td>
+<td>295
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>154</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>297
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>155</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>297
+:
+14</td>
+<td><code>.    ...    )</code></td>
+<td><code></code></td></tr>
+<tr><th>156</th>
+<td>Block</td>
+<td>Killed</td>
+<td>297
+:
+50</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>157</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>158</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>159</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code>[ ] &....   .</code></td></tr>
+<tr><th>160</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code>[ ] &....   .</code></td></tr>
+<tr><th>161</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>162</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>163</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code>[ ] |... [ ].</code></td></tr>
+<tr><th>164</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code></code></td></tr>
+<tr><th>165</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>299
+:
+14</td>
+<td><code>[ ] &... [ ].</code></td>
+<td><code></code></td></tr>
+<tr><th>166</th>
+<td>Block</td>
+<td>Killed</td>
+<td>303
+:
+14</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>167</th>
+<td>Block</td>
+<td>Killed</td>
+<td>308
+:
+36</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>168</th>
+<td>Block</td>
+<td>Killed</td>
+<td>311
+:
+33</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>169</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>314
+:
+18</td>
+<td><code>.       !==</code></td>
+<td><code></code></td></tr>
+<tr><th>170</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>314
+:
+18</td>
+<td><code>.       !==</code></td>
+<td><code>.       ===</code></td></tr>
+<tr><th>171</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>314
+:
+18</td>
+<td><code>.       !==</code></td>
+<td><code></code></td></tr>
+<tr><th>172</th>
+<td>Block</td>
+<td>Killed</td>
+<td>314
+:
+62</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>173</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>316
+:
+18</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>174</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>175</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>176</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code>&&   ....   .</code></td></tr>
+<tr><th>177</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code>&&   ....   .</code></td></tr>
+<tr><th>178</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>179</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ....   .</code></td>
+<td><code></code></td></tr>
+<tr><th>180</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code>||   ...    .</code></td></tr>
+<tr><th>181</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>182</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>323
+:
+12</td>
+<td><code>&&
+  ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>183</th>
+<td>Block</td>
+<td>Killed</td>
+<td>327
+:
+12</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>184</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>328
+:
+16</td>
+<td><code>.   (... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>185</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>328
+:
+16</td>
+<td><code>.   (... .  )</code></td>
+<td><code></code></td></tr>
+<tr><th>186</th>
+<td>Block</td>
+<td>Killed</td>
+<td>328
+:
+60</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>187</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>329
+:
+30</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>188</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>340
+:
+10</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>189</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>340
+:
+10</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>190</th>
+<td>Block</td>
+<td>Killed</td>
+<td>340
+:
+29</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>191</th>
+<td>Block</td>
+<td>Killed</td>
+<td>341
+:
+54</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>192</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>343
+:
+14</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>193</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>343
+:
+14</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>194</th>
+<td>Block</td>
+<td>Killed</td>
+<td>343
+:
+33</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>195</th>
+<td>Block</td>
+<td>Killed</td>
+<td>347
+:
+17</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>196</th>
+<td>ArrayLiteral</td>
+<td>Killed</td>
+<td>350
+:
+53</td>
+<td><code>[   (....  )]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>197</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>355
+:
+22</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>198</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>362
+:
+18</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>199</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>363
+:
+16</td>
+<td><code>`${  ...  )}`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>200</th>
+<td>Block</td>
+<td>Survived</td>
+<td>368
+:
+64</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>201</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>371
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>202</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>371
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>203</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>371
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code>.    ...   >=</code></td></tr>
+<tr><th>204</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>371
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code>.    ...   <=</code></td></tr>
+<tr><th>205</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>371
+:
+36</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>206</th>
+<td>Block</td>
+<td>Survived</td>
+<td>371
+:
+55</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>207</th>
+<td>Block</td>
+<td>Killed</td>
+<td>378
+:
+64</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>208</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>381
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>209</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>381
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code></code></td></tr>
+<tr><th>210</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>381
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code>.    ...   >=</code></td></tr>
+<tr><th>211</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>381
+:
+12</td>
+<td><code>.    ...    ></code></td>
+<td><code>.    ...   <=</code></td></tr>
+<tr><th>212</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>381
+:
+36</td>
+<td><code>`   `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>213</th>
+<td>Block</td>
+<td>Killed</td>
+<td>381
+:
+55</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>214</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>387
+:
+12</td>
+<td><code>(    ...) ===</code></td>
+<td><code>(    ...) !==</code></td></tr>
+<tr><th>215</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>387
+:
+12</td>
+<td><code>(    ...) ===</code></td>
+<td><code></code></td></tr>
+<tr><th>216</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>387
+:
+12</td>
+<td><code>(    ...) ===</code></td>
+<td><code></code></td></tr>
+<tr><th>217</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>388
+:
+16</td>
+<td><code>`${  ....  }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>218</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>391
+:
+12</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>219</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>391
+:
+12</td>
+<td><code>=== `    `</code></td>
+<td><code></code></td></tr>
+<tr><th>220</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>391
+:
+12</td>
+<td><code>=== `    `</code></td>
+<td><code>!== `    `</code></td></tr>
+<tr><th>221</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>391
+:
+26</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>222</th>
+<td>Block</td>
+<td>Killed</td>
+<td>391
+:
+34</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>223</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>400
+:
+26</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>224</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>404
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>225</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>404
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>226</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>404
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code>=== `...   ])</code></td></tr>
+<tr><th>227</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>404
+:
+10</td>
+<td><code>=== `        `</code></td>
+<td><code>!== `        `</code></td></tr>
+<tr><th>228</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>404
+:
+10</td>
+<td><code>=== `        `</code></td>
+<td><code></code></td></tr>
+<tr><th>229</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>404
+:
+10</td>
+<td><code>=== `        `</code></td>
+<td><code></code></td></tr>
+<tr><th>230</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>404
+:
+24</td>
+<td><code>`        `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>231</th>
+<td>Block</td>
+<td>Survived</td>
+<td>406
+:
+10</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>232</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>415
+:
+26</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>233</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>419
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>234</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>419
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>235</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>419
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code>=== `...   ])</code></td></tr>
+<tr><th>236</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>419
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code>!== `      `</code></td></tr>
+<tr><th>237</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>419
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>238</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>419
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>239</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>419
+:
+24</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>240</th>
+<td>Block</td>
+<td>Killed</td>
+<td>421
+:
+10</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>241</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>430
+:
+26</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>242</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>434
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>243</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>434
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code>=== `...   ])</code></td></tr>
+<tr><th>244</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>434
+:
+10</td>
+<td><code>=== `...   ])</code></td>
+<td><code></code></td></tr>
+<tr><th>245</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>434
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code>!== `      `</code></td></tr>
+<tr><th>246</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>434
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>247</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>434
+:
+10</td>
+<td><code>=== `      `</code></td>
+<td><code></code></td></tr>
+<tr><th>248</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>434
+:
+24</td>
+<td><code>`      `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>249</th>
+<td>Block</td>
+<td>Survived</td>
+<td>436
+:
+10</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>250</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>437
+:
+26</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>251</th>
+<td>Block</td>
+<td>Survived</td>
+<td>439
+:
+65</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>252</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>449
+:
+28</td>
+<td><code>`${  ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>253</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>456
+:
+18</td>
+<td><code>{ ......    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>254</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>467
+:
+28</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>255</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>474
+:
+16</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>256</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>475
+:
+14</td>
+<td><code>`${  ... `)}`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>257</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>475
+:
+30</td>
+<td><code>`           `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>258</th>
+<td>Block</td>
+<td>Killed</td>
+<td>485
+:
+36</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>259</th>
+<td>Block</td>
+<td>Killed</td>
+<td>488
+:
+39</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>260</th>
+<td>Block</td>
+<td>Killed</td>
+<td>500
+:
+6</td>
+<td><code>{
+   ... })
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>261</th>
+<td>Block</td>
+<td>Killed</td>
+<td>501
+:
+28</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>262</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>503
+:
+27</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>263</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>508
+:
+43</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>264</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>513
+:
+27</td>
+<td><code>{ ......    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>265</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>517
+:
+28</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>266</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>523
+:
+10</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>267</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>526
+:
+10</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>268</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>528
+:
+22</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>269</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>535
+:
+16</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>270</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>536
+:
+14</td>
+<td><code>`${  ... `)}`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>271</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>536
+:
+30</td>
+<td><code>`     `</code></td>
+<td><code>""</code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>

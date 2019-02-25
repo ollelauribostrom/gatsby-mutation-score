@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html><head><title>gatsby-ssr.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">gatsby-ssr.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">gatsby-ssr.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>gatsby-ssr.js</td>
+<td><div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="37.93" aria-valuemin="0" aria-valuemax="100" style="width: 37.93%;">37.93
+%</div></div></td>
+<th class="text-center text-danger" style="width: 10%">37.93</th>
+<td class="text-center">22</td>
+<td class="text-center">36</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">22</th>
+<th class="text-center">36</th>
+<th class="text-center">58</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(36)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(22)</label></div>
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">import React from &quot;react&quot;
+import { Minimatch } from &quot;minimatch&quot;
+
+exports.onRenderBody = (
+  { setHeadComponents, setPostBodyComponents },
+  pluginOptions
+) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="0"><span class="badge badge-success">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">{}</span><span class="stryker-original-code" data-mutant="0"><span class="bg-success-light">{
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="1"><span class="badge badge-danger">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="2"><span class="badge badge-success">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="3"><span class="badge badge-success">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">process.env.NODE_ENV !== `production` || process.env.NODE_ENV !== `test`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="4"><span class="badge badge-danger">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">process.env.NODE_ENV === `production`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="5"><span class="badge badge-danger">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="6"><span class="badge badge-danger">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">true</span><span class="stryker-original-code" data-mutant="1"><span class="stryker-original-code" data-mutant="2"><span class="stryker-original-code" data-mutant="3"><span class="stryker-original-code" data-mutant="4"><span class="stryker-original-code" data-mutant="5"><span class="stryker-original-code" data-mutant="6"><span class="bg-danger-light">process.env.NODE_ENV !== </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="7"><span class="badge badge-danger">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&quot;&quot;</span><span class="stryker-original-code" data-mutant="7"><span class="bg-danger-light">`production`</span></span></span></span></span><span class="bg-danger-light"> &amp;&amp; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="8"><span class="badge badge-success">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">process.env.NODE_ENV === `test`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="9"><span class="badge badge-danger">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="10"><span class="badge badge-success">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">true</span><span class="stryker-original-code" data-mutant="8"><span class="stryker-original-code" data-mutant="9"><span class="stryker-original-code" data-mutant="10"><span class="bg-danger-light">process.env.NODE_ENV !== </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="11"><span class="badge badge-success">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">&quot;&quot;</span><span class="stryker-original-code" data-mutant="11"><span class="bg-danger-light">`test`</span></span></span></span></span></span></span></span><span class="bg-success-light">)
+    return null
+
+  const gtagConfig = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="12"><span class="badge badge-success">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="13"><span class="badge badge-success">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">pluginOptions.gtagConfig &amp;&amp; {}</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="14"><span class="badge badge-success">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">true</span><span class="stryker-original-code" data-mutant="12"><span class="stryker-original-code" data-mutant="13"><span class="stryker-original-code" data-mutant="14"><span class="bg-success-light">pluginOptions.gtagConfig || {}</span></span></span></span><span class="bg-success-light">
+  const pluginConfig = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="15"><span class="badge badge-success">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">pluginOptions.pluginConfig &amp;&amp; {}</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="16"><span class="badge badge-success">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="17"><span class="badge badge-success">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">true</span><span class="stryker-original-code" data-mutant="15"><span class="stryker-original-code" data-mutant="16"><span class="stryker-original-code" data-mutant="17"><span class="bg-success-light">pluginOptions.pluginConfig || {}</span></span></span></span><span class="bg-success-light">
+
+  // Prevent duplicate or excluded pageview events being emitted on initial load of page by the `config` command
+  // https://developers.google.com/analytics/devguides/collection/gtagjs/#disable_pageview_tracking
+
+  gtagConfig.send_page_view = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="18"><span class="badge badge-danger">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">true</span><span class="stryker-original-code" data-mutant="18"><span class="bg-danger-light">false</span></span><span class="bg-success-light">
+
+  const firstTrackingId =
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="19"><span class="badge badge-danger">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">pluginOptions.trackingIds || pluginOptions.trackingIds.length</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="20"><span class="badge badge-danger">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="21"><span class="badge badge-danger">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">true</span><span class="stryker-original-code" data-mutant="19"><span class="stryker-original-code" data-mutant="20"><span class="stryker-original-code" data-mutant="21"><span class="bg-danger-light">pluginOptions.trackingIds &amp;&amp; pluginOptions.trackingIds.length</span></span></span></span><span class="bg-success-light">
+      ? pluginOptions.trackingIds[0]
+      : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="22"><span class="badge badge-danger">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="22"><span class="bg-danger-light">``</span></span><span class="bg-success-light">
+
+  const excludeGtagPaths = []
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="23"><span class="badge badge-danger">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="24"><span class="badge badge-success">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="25"><span class="badge badge-success">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">typeof pluginConfig.exclude === `undefined`</span><span class="stryker-original-code" data-mutant="23"><span class="stryker-original-code" data-mutant="24"><span class="stryker-original-code" data-mutant="25"><span class="bg-danger-light">typeof pluginConfig.exclude !== </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="26"><span class="badge badge-success">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">&quot;&quot;</span><span class="stryker-original-code" data-mutant="26"><span class="bg-danger-light">`undefined`</span></span></span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="27"><span class="badge badge-danger">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">{}</span><span class="stryker-original-code" data-mutant="27"><span class="bg-danger-light">{
+    pluginConfig.exclude.map(exclude =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="28"><span class="badge badge-danger">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">{}</span><span class="stryker-original-code" data-mutant="28"><span class="bg-danger-light">{
+      const mm = new Minimatch(exclude)
+      excludeGtagPaths.push(mm.makeRe())
+    }</span></span><span class="bg-danger-light">)
+  }</span></span><span class="bg-success-light">
+
+  const setComponents = pluginConfig.head
+    ? setHeadComponents
+    : setPostBodyComponents
+
+  // TODO: remove pluginOptions.respectDNT in the next major release of this plugin.
+  // See issue https://github.com/gatsbyjs/gatsby/issues/11159 for the discussion.
+  const respectDNT = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="29"><span class="badge badge-success">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">pluginConfig.respectDNT &amp;&amp; pluginOptions.respectDNT</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="30"><span class="badge badge-success">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="31"><span class="badge badge-success">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">true</span><span class="stryker-original-code" data-mutant="29"><span class="stryker-original-code" data-mutant="30"><span class="stryker-original-code" data-mutant="31"><span class="bg-success-light">pluginConfig.respectDNT || pluginOptions.respectDNT</span></span></span></span><span class="bg-success-light">
+
+  const renderHtml = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="32"><span class="badge badge-success">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">&quot;&quot;</span><span class="stryker-original-code" data-mutant="32"><span class="bg-success-light">`
+      ${
+        excludeGtagPaths.length
+          ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="33"><span class="badge badge-danger">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">&quot;&quot;</span><span class="stryker-original-code" data-mutant="33"><span class="bg-danger-light">`window.excludeGtagPaths=[${excludeGtagPaths.join(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="34"><span class="badge badge-danger">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">&quot;&quot;</span><span class="stryker-original-code" data-mutant="34"><span class="bg-danger-light">`,`</span></span><span class="bg-danger-light">)}];`</span></span><span class="bg-success-light">
+          : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="35"><span class="badge badge-danger">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="35"><span class="bg-danger-light">``</span></span><span class="bg-success-light">
+      }
+      ${
+        </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="36"><span class="badge badge-danger">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">typeof gtagConfig.anonymize_ip !== `undefined` || gtagConfig.anonymize_ip === true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="37"><span class="badge badge-danger">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="39"><span class="badge badge-danger">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">typeof gtagConfig.anonymize_ip === `undefined`</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="40"><span class="badge badge-danger">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="41"><span class="badge badge-danger">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">true</span><span class="stryker-original-code" data-mutant="36"><span class="stryker-original-code" data-mutant="37"><span class="stryker-original-code" data-mutant="38"><span class="stryker-original-code" data-mutant="39"><span class="stryker-original-code" data-mutant="40"><span class="stryker-original-code" data-mutant="41"><span class="bg-danger-light">typeof gtagConfig.anonymize_ip !== </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="42"><span class="badge badge-danger">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">&quot;&quot;</span><span class="stryker-original-code" data-mutant="42"><span class="bg-danger-light">`undefined`</span></span></span></span></span><span class="bg-danger-light"> &amp;&amp;
+        </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="43"><span class="badge badge-danger">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">gtagConfig.anonymize_ip !== true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="44"><span class="badge badge-danger">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="45"><span class="badge badge-danger">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">true</span><span class="stryker-original-code" data-mutant="43"><span class="stryker-original-code" data-mutant="44"><span class="stryker-original-code" data-mutant="45"><span class="bg-danger-light">gtagConfig.anonymize_ip === </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="46"><span class="badge badge-danger">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">false</span><span class="stryker-original-code" data-mutant="46"><span class="bg-danger-light">true</span></span></span></span></span></span></span></span><span class="bg-success-light">
+          ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="47"><span class="badge badge-danger">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">&quot;&quot;</span><span class="stryker-original-code" data-mutant="47"><span class="bg-danger-light">`function gaOptout(){document.cookie=disableStr+&#039;=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/&#039;,window[disableStr]=!0}var gaProperty=&#039;${firstTrackingId}&#039;,disableStr=&#039;ga-disable-&#039;+gaProperty;document.cookie.indexOf(disableStr+&#039;=true&#039;)&gt;-1&amp;&amp;(window[disableStr]=!0);`</span></span><span class="bg-success-light">
+          : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="48"><span class="badge badge-danger">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="48"><span class="bg-danger-light">``</span></span><span class="bg-success-light">
+      }
+      if(${
+        respectDNT
+          ? </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="49"><span class="badge badge-success">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">&quot;&quot;</span><span class="stryker-original-code" data-mutant="49"><span class="bg-success-light">`!(navigator.doNotTrack == &quot;1&quot; || window.doNotTrack == &quot;1&quot;)`</span></span><span class="bg-success-light">
+          : </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="50"><span class="badge badge-danger">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">&quot;&quot;</span><span class="stryker-original-code" data-mutant="50"><span class="bg-danger-light">`true`</span></span><span class="bg-success-light">
+      }) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer &amp;&amp; window.dataLayer.push(arguments);}
+        gtag(&#039;js&#039;, new Date());
+
+        ${pluginOptions.trackingIds
+          .map(
+            trackingId =&gt;
+              </span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="51"><span class="badge badge-danger">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">&quot;&quot;</span><span class="stryker-original-code" data-mutant="51"><span class="bg-danger-light">`gtag(&#039;config&#039;, &#039;${trackingId}&#039;, ${JSON.stringify(gtagConfig)});`</span></span><span class="bg-success-light">
+          )
+          .join(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="52"><span class="badge badge-danger">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">&quot;Stryker was here!&quot;</span><span class="stryker-original-code" data-mutant="52"><span class="bg-danger-light">``</span></span><span class="bg-success-light">)}
+      }
+      `</span></span><span class="bg-success-light">
+
+  return setComponents(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="53"><span class="badge badge-success">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">[]</span><span class="stryker-original-code" data-mutant="53"><span class="bg-success-light">[
+    &lt;script
+      key={</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="54"><span class="badge badge-danger">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">&quot;&quot;</span><span class="stryker-original-code" data-mutant="54"><span class="bg-danger-light">`gatsby-plugin-google-gtag`</span></span><span class="bg-success-light">}
+      async
+      src={</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="55"><span class="badge badge-danger">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">&quot;&quot;</span><span class="stryker-original-code" data-mutant="55"><span class="bg-danger-light">`https://www.googletagmanager.com/gtag/js?id=${firstTrackingId}`</span></span><span class="bg-success-light">}
+    /&gt;,
+    &lt;script
+      key={</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="56"><span class="badge badge-danger">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">&quot;&quot;</span><span class="stryker-original-code" data-mutant="56"><span class="bg-danger-light">`gatsby-plugin-google-gtag-config`</span></span><span class="bg-success-light">}
+      dangerouslySetInnerHTML={</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ObjectLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="57"><span class="badge badge-success">57</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="57">{}</span><span class="stryker-original-code" data-mutant="57"><span class="bg-success-light">{ __html: renderHtml() }</span></span><span class="bg-success-light">}
+    /&gt;,
+  ]</span></span><span class="bg-success-light">)
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>Block</td>
+<td>Killed</td>
+<td>6
+:
+5</td>
+<td><code>{
+   ... ])
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>1</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>2</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>3</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code>.   ....    `</code></td></tr>
+<tr><th>4</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code>.   ....    `</code></td></tr>
+<tr><th>5</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>6</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>7
+:
+6</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>7</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>7
+:
+31</td>
+<td><code>`          `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>8</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>7
+:
+47</td>
+<td><code>.   ....    `</code></td>
+<td><code>.   ....    `</code></td></tr>
+<tr><th>9</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>7
+:
+47</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>10</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>7
+:
+47</td>
+<td><code>.   ....    `</code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>7
+:
+72</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>12</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>10
+:
+21</td>
+<td><code>.    ...|| {}</code></td>
+<td><code></code></td></tr>
+<tr><th>13</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>10
+:
+21</td>
+<td><code>.    ...|| {}</code></td>
+<td><code>.    ...&& {}</code></td></tr>
+<tr><th>14</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>10
+:
+21</td>
+<td><code>.    ...|| {}</code></td>
+<td><code></code></td></tr>
+<tr><th>15</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>11
+:
+23</td>
+<td><code>.    ...|| {}</code></td>
+<td><code>.    ...&& {}</code></td></tr>
+<tr><th>16</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>11
+:
+23</td>
+<td><code>.    ...|| {}</code></td>
+<td><code></code></td></tr>
+<tr><th>17</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>11
+:
+23</td>
+<td><code>.    ...|| {}</code></td>
+<td><code></code></td></tr>
+<tr><th>18</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>16
+:
+30</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>19</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>19
+:
+4</td>
+<td><code>.    ...    .</code></td>
+<td><code>.    ...    .</code></td></tr>
+<tr><th>20</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>19
+:
+4</td>
+<td><code>.    ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>21</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>19
+:
+4</td>
+<td><code>.    ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>22</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>21
+:
+8</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>23</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>24
+:
+6</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>24</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>24
+:
+6</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>25</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>24
+:
+6</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>26</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>24
+:
+38</td>
+<td><code>`         `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>27</th>
+<td>Block</td>
+<td>Survived</td>
+<td>24
+:
+51</td>
+<td><code>{
+   ...)
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>28</th>
+<td>Block</td>
+<td>Survived</td>
+<td>25
+:
+40</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>29</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>37
+:
+21</td>
+<td><code>.    ...    .</code></td>
+<td><code>.    ...    .</code></td></tr>
+<tr><th>30</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>37
+:
+21</td>
+<td><code>.    ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>31</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>37
+:
+21</td>
+<td><code>.    ...    .</code></td>
+<td><code></code></td></tr>
+<tr><th>32</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>39
+:
+27</td>
+<td><code>`
+   ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>33</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>42
+:
+12</td>
+<td><code>`    ...)}];`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>34</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>42
+:
+62</td>
+<td><code>`,`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>35</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>43
+:
+12</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>36</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code>.    ...  ===</code></td></tr>
+<tr><th>37</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code></code></td></tr>
+<tr><th>39</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code>.    ...    `</code></td></tr>
+<tr><th>40</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>41</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>46
+:
+8</td>
+<td><code>.    ...    `</code></td>
+<td><code></code></td></tr>
+<tr><th>42</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>46
+:
+43</td>
+<td><code>`         `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>43</th>
+<td>BinaryExpression</td>
+<td>Survived</td>
+<td>47
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code>.    ...  !==</code></td></tr>
+<tr><th>44</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>47
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code></code></td></tr>
+<tr><th>45</th>
+<td>ConditionalExpression</td>
+<td>Survived</td>
+<td>47
+:
+8</td>
+<td><code>.    ...  ===</code></td>
+<td><code></code></td></tr>
+<tr><th>46</th>
+<td>BooleanSubstitution</td>
+<td>Survived</td>
+<td>47
+:
+36</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>47</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>48
+:
+12</td>
+<td><code>`    ...! );`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>48</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>49
+:
+12</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>49</th>
+<td>StringLiteral</td>
+<td>Killed</td>
+<td>53
+:
+12</td>
+<td><code>`!(  ..." ")`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>50</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>54
+:
+12</td>
+<td><code>`    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>51</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>63
+:
+14</td>
+<td><code>`    ...)});`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>52</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>65
+:
+16</td>
+<td><code>``</code></td>
+<td><code>"    ...   !"</code></td></tr>
+<tr><th>53</th>
+<td>ArrayLiteral</td>
+<td>Killed</td>
+<td>69
+:
+23</td>
+<td><code>[
+   ...,
+  ]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>54</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>71
+:
+11</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>55</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>73
+:
+11</td>
+<td><code>`    ...   }`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>56</th>
+<td>StringLiteral</td>
+<td>Survived</td>
+<td>76
+:
+11</td>
+<td><code>`    ...    `</code></td>
+<td><code>""</code></td></tr>
+<tr><th>57</th>
+<td>ObjectLiteral</td>
+<td>Killed</td>
+<td>77
+:
+31</td>
+<td><code>{    ... () }</code></td>
+<td><code>{}</code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>

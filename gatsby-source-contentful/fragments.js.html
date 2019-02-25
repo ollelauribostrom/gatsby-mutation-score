@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html><head><title>fragments.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">fragments.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">fragments.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>fragments.js</td>
+<td><div class="progress"><div class="progress-bar bg-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%;">100.00
+%</div></div></td>
+<th class="text-center text-success" style="width: 10%">100.00</th>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">20</td>
+<th class="text-center">0</th>
+<th class="text-center">0</th>
+<th class="text-center">20</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+
+
+
+
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="5" type="checkbox">
+TranspileError
+ 
+(20)</label></div>
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">import { graphql } from &quot;gatsby&quot;
+
+export const contentfulAssetFixed = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="0"><span class="badge badge-secondary">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">&quot;&quot;</span><span class="stryker-original-code" data-mutant="0"><span class="bg-null">`
+  fragment GatsbyContentfulFixed on ContentfulFixed {
+    base64
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFixedTracedSVG = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="1"><span class="badge badge-secondary">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">&quot;&quot;</span><span class="stryker-original-code" data-mutant="1"><span class="bg-null">`
+  fragment GatsbyContentfulFixed_tracedSVG on ContentfulFixed {
+    tracedSVG
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFixedNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="2"><span class="badge badge-secondary">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">&quot;&quot;</span><span class="stryker-original-code" data-mutant="2"><span class="bg-null">`
+  fragment GatsbyContentfulFixed_noBase64 on ContentfulFixed {
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFixedPreferWebp = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="3"><span class="badge badge-secondary">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">&quot;&quot;</span><span class="stryker-original-code" data-mutant="3"><span class="bg-null">`
+  fragment GatsbyContentfulFixed_withWebp on ContentfulFixed {
+    base64
+    width
+    height
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFixedPreferWebpNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="4"><span class="badge badge-secondary">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">&quot;&quot;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-null">`
+  fragment GatsbyContentfulFixed_withWebp_noBase64 on ContentfulFixed {
+    width
+    height
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFluid = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="5"><span class="badge badge-secondary">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">&quot;&quot;</span><span class="stryker-original-code" data-mutant="5"><span class="bg-null">`
+  fragment GatsbyContentfulFluid on ContentfulFluid {
+    base64
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFluidTracedSVG = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="6"><span class="badge badge-secondary">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">&quot;&quot;</span><span class="stryker-original-code" data-mutant="6"><span class="bg-null">`
+  fragment GatsbyContentfulFluid_tracedSVG on ContentfulFluid {
+    tracedSVG
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFluidNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="7"><span class="badge badge-secondary">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&quot;&quot;</span><span class="stryker-original-code" data-mutant="7"><span class="bg-null">`
+  fragment GatsbyContentfulFluid_noBase64 on ContentfulFluid {
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFluidPreferWebp = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="8"><span class="badge badge-secondary">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">&quot;&quot;</span><span class="stryker-original-code" data-mutant="8"><span class="bg-null">`
+  fragment GatsbyContentfulFluid_withWebp on ContentfulFluid {
+    base64
+    aspectRatio
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetFluidPreferWebpNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="9"><span class="badge badge-secondary">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">&quot;&quot;</span><span class="stryker-original-code" data-mutant="9"><span class="bg-null">`
+  fragment GatsbyContentfulFluid_withWebp_noBase64 on ContentfulFluid {
+    aspectRatio
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+// TODO: in v3 remove these legacy fragments
+export const contentfulAssetResolutions = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="10"><span class="badge badge-secondary">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">&quot;&quot;</span><span class="stryker-original-code" data-mutant="10"><span class="bg-null">`
+  fragment GatsbyContentfulResolutions on ContentfulResolutions {
+    base64
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetResolutionsTracedSVG = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="11"><span class="badge badge-secondary">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">&quot;&quot;</span><span class="stryker-original-code" data-mutant="11"><span class="bg-null">`
+  fragment GatsbyContentfulResolutions_tracedSVG on ContentfulResolutions {
+    tracedSVG
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetResolutionsNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="12"><span class="badge badge-secondary">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">&quot;&quot;</span><span class="stryker-original-code" data-mutant="12"><span class="bg-null">`
+  fragment GatsbyContentfulResolutions_noBase64 on ContentfulResolutions {
+    width
+    height
+    src
+    srcSet
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetResolutionsPreferWebp = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="13"><span class="badge badge-secondary">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">&quot;&quot;</span><span class="stryker-original-code" data-mutant="13"><span class="bg-null">`
+  fragment GatsbyContentfulResolutions_withWebp on ContentfulResolutions {
+    base64
+    width
+    height
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetResolutionsPreferWebpNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="14"><span class="badge badge-secondary">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">&quot;&quot;</span><span class="stryker-original-code" data-mutant="14"><span class="bg-null">`
+  fragment GatsbyContentfulResolutions_withWebp_noBase64 on ContentfulResolutions {
+    width
+    height
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetSizes = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="15"><span class="badge badge-secondary">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">&quot;&quot;</span><span class="stryker-original-code" data-mutant="15"><span class="bg-null">`
+  fragment GatsbyContentfulSizes on ContentfulSizes {
+    base64
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetSizesTracedSVG = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="16"><span class="badge badge-secondary">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">&quot;&quot;</span><span class="stryker-original-code" data-mutant="16"><span class="bg-null">`
+  fragment GatsbyContentfulSizes_tracedSVG on ContentfulSizes {
+    tracedSVG
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetSizesNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="17"><span class="badge badge-secondary">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">&quot;&quot;</span><span class="stryker-original-code" data-mutant="17"><span class="bg-null">`
+  fragment GatsbyContentfulSizes_noBase64 on ContentfulSizes {
+    aspectRatio
+    src
+    srcSet
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetSizesPreferWebp = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="18"><span class="badge badge-secondary">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">&quot;&quot;</span><span class="stryker-original-code" data-mutant="18"><span class="bg-null">`
+  fragment GatsbyContentfulSizes_withWebp on ContentfulSizes {
+    base64
+    aspectRatio
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+    sizes
+  }
+`</span></span><span class="bg-null">
+
+export const contentfulAssetSizesPreferWebpNoBase64 = graphql</span><a href="#" class="stryker-mutant-button" tabindex="0" title="StringLiteral" data-content="status: TranspileError" data-mutant-status-annotation="secondary" data-mutant-status="5" data-mutant="19"><span class="badge badge-secondary">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">&quot;&quot;</span><span class="stryker-original-code" data-mutant="19"><span class="bg-null">`
+  fragment GatsbyContentfulSizes_withWebp_noBase64 on ContentfulSizes {
+    aspectRatio
+    src
+    srcSet
+    srcWebp
+    srcSetWebp
+    sizes
+  }
+`</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>2
+:
+43</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>1</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>12
+:
+52</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>2</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>22
+:
+51</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>3</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>31
+:
+53</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>4</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>43
+:
+61</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>5</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>54
+:
+43</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>6</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>64
+:
+52</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>7</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>74
+:
+51</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>8</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>83
+:
+53</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>9</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>95
+:
+61</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>10</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>107
+:
+49</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>11</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>117
+:
+58</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>12</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>127
+:
+57</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>13</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>136
+:
+59</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>14</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>148
+:
+67</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>15</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>159
+:
+43</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>16</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>169
+:
+52</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>17</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>179
+:
+51</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>18</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>188
+:
+53</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr>
+<tr><th>19</th>
+<td>StringLiteral</td>
+<td>TranspileError</td>
+<td>200
+:
+61</td>
+<td><code>`
+   ...  }
+`</code></td>
+<td><code>""</code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>
